@@ -21,7 +21,7 @@ A DRAFT Word review saved to /Documents/Cowork/reviews/<artifact-name>-ciso-revi
 
 ## Why this exists
 
-Documents die in executive reviews for reasons their authors never saw coming, and the security objection is the one most often raised too late to fix. This skill is the security seat in the Executive Review Board suite: each of the seven reviewers works standalone, and the [review-board](../review-board/) skill orchestrates all of them in one pass. It was built in response to community demand for pressure-testing proposals, business cases and decks against hard executive questioning before the real meeting. The persona is an archetype synthesised from public, general knowledge of the CISO role; it represents no real individual.
+Documents die in executive reviews for reasons their authors never saw coming, and the security objection is the one most often raised too late to fix. This skill is the security seat in the executive-review suite: each reviewer works standalone. It was built in response to community demand for pressure-testing proposals, business cases and decks against hard executive questioning before the real meeting. The persona is an archetype synthesised from public, general knowledge of the CISO role; it represents no real individual.
 
 ## Status
 

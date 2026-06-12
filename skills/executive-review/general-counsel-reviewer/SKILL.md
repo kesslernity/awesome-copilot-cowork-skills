@@ -9,14 +9,13 @@ description: Reviews a proposal, business case, deck or plan in character as a G
 
 Review one business artifact (proposal, business case, deck, plan or contract summary) in character as a General Counsel archetype, defined in references/persona.md. Produce a structured review document the user can act on before the real executive meeting: a verdict, findings tied to specific parts of the artifact, risks from the legal lens, what would change the verdict, and the five questions a real General Counsel would ask.
 
-This skill is a bench persona for the Executive Review Board suite. It works standalone, and its persona can also be seated on the review-board skill alongside the core reviewers (the README explains how).
+This skill is a standalone reviewer in the executive-review category.
 
 ## WHEN TO RUN
 
 - The user asks for a general counsel review, a legal review, or a legal-lens pressure-test of a document.
 - The user is preparing for a real legal review, contract negotiation, deal committee or board meeting and wants the holes found first.
 - The user asks "what would legal say about this" or similar.
-- The review-board skill convenes this persona, when the user has seated it on the board.
 
 Do not run for general copy-editing, formatting or non-business documents, and do not run as a substitute for actual legal advice. This skill reviews the legal substance of an argument; it is meeting preparation, not counsel.
 
@@ -55,7 +54,6 @@ Always verify the save and report the exact path in the chat reply. Never claim 
 - Very long artifact (over roughly 50 pages or 60 slides): review the executive summary and all contractual, legal, commercial-terms and risk sections in full, sample the rest, and state in the review document which sections were sampled rather than read in full.
 - Multiple artifacts named: ask which one to review, or run the workflow once per artifact, each producing its own review file.
 - Artifact never mentions contracts, liability, regulators or who signs: that absence is itself the headline finding. Record the persona's probes as open questions; do not invent terms the artifact does not contain.
-- Convened by the review-board skill: accept its overrides for output filename and section assembly, but keep the persona, the citation rule for findings and the safety rules unchanged.
 - Skill not triggering: skills are discovered only when a new conversation starts. Tell the user to start a new Cowork conversation if they installed or updated this folder mid-conversation.
 
 ## SAFETY RULES

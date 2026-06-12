@@ -9,7 +9,7 @@ description: Reviews a proposal, business case, deck or plan in character as a C
 
 Review one business artifact (proposal, business case, deck or plan) in character as a Customer Advocate archetype, defined in references/persona.md. Produce a structured review document the user can act on before the real decision meeting: a verdict, findings tied to specific parts of the artifact, risks from the customer lens, what would change the verdict, and the five questions a customer advocate would ask in the room.
 
-This skill is a bench persona in the Executive Review Board suite. It works standalone, and its persona can also be seated on the review-board skill alongside the seven C-suite reviewers (see this skill's README for the seating instructions).
+This skill is a bench persona in the executive-review suite. It works standalone.
 
 ## WHEN TO RUN
 
@@ -55,7 +55,6 @@ Always report the exact saved path in the chat reply. Never claim a save locatio
 - Artifact contains no customer evidence at all (no ticket, no quote, no request log): that is itself the headline finding. The verdict will almost always be "not ready"; cite the sections where customer evidence was expected and absent, and record the missing evidence as open questions.
 - Very long artifact (over roughly 50 pages or 60 slides): review the executive summary and every customer-facing section (migration, pricing, support, communication) in full, sample the rest, and state in the review document which sections were sampled rather than read in full.
 - Multiple artifacts named: ask which one to review, or run the workflow once per artifact, each producing its own review file.
-- Persona seated on the review board: if the user has copied references/persona.md into their installed review-board skill folder as persona-customer-advocate.md, the board loads that copy directly and this skill is not invoked; standalone runs of this skill are unaffected.
 - Skill not triggering: skills are discovered only when a new conversation starts. Tell the user to start a new Cowork conversation if they installed or updated this folder mid-conversation.
 
 ## SAFETY RULES

@@ -29,7 +29,7 @@ If `/Documents/Cowork/org-profile.md` exists, the review uses it as company cont
 
 ## Why this exists
 
-This skill is the CMO seat of the Executive Review Board suite ([review-board](../review-board/)), seven role archetypes that interrogate a document the way the real meeting will. The suite exists because of steady community demand for pressure-testing proposals, business cases and decks before real executive reviews: the hard questions are cheaper to hear from an archetype than from the executive who controls the budget. Each reviewer works standalone; the review-board skill orchestrates all seven in one pass.
+This skill is the CMO seat of the executive-review category: role archetypes that interrogate a document the way the real meeting will. The suite exists because of steady community demand for pressure-testing proposals, business cases and decks before real executive reviews: the hard questions are cheaper to hear from an archetype than from the executive who controls the budget. Each reviewer works standalone.
 
 ## Status
 

@@ -27,7 +27,7 @@ A structured review document, saved as `<artifact-name>-cro-review.docx` in `/Do
 
 ## Why this exists
 
-This is one seat on the Executive Review Board, a suite of seven executive role archetypes that interrogate a document before it faces the real executives ([../review-board/](../review-board/)). The recurring ask behind the suite: a way to pressure-test proposals before real executive reviews, because the pipeline, pricing and forecast questions that sink business cases are predictable, and rehearsing against a sceptical revenue lens surfaces them while there is still time to fix the document. Each reviewer works standalone; the review-board skill runs all seven and merges the verdicts. Drop `org-profile.md` into `/Documents/Cowork/` (template in the review-board folder) and every reviewer reads it as company context.
+This is one seat of the executive-review category: executive role archetypes that interrogate a document before it faces the real executives. The recurring ask behind the suite: a way to pressure-test proposals before real executive reviews, because the pipeline, pricing and forecast questions that sink business cases are predictable, and rehearsing against a sceptical revenue lens surfaces them while there is still time to fix the document. Each reviewer works standalone. Drop `org-profile.md` into `/Documents/Cowork/` (template in this skill's references folder) and every reviewer reads it as company context.
 
 ## Status
 

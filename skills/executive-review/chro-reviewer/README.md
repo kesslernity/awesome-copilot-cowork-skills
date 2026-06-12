@@ -29,17 +29,8 @@ The persona lives in `references/persona.md`: mandate, ten probes, red flags, wh
 
 ## Why this exists
 
-This skill is a bench persona for the Executive Review Board suite (see the [review-board](../review-board/) folder, which orchestrates the board and ships the org profile template). The board ships with a fixed set of reviewers; the bench extends it with additional executive lenses you seat only when the document warrants them. The CHRO lens matters whenever a plan changes who does what: restructurings, operating model shifts, automation cases and anything with "freed capacity" in it. Those documents tend to be precise about the savings and vague about the people, and that vagueness is exactly what the real CHRO interrogates. It works standalone; you do not need the rest of the suite installed.
+This skill is a bench persona for the executive-review suite. The core seven cover the C-suite; the bench adds executive lenses you run only when the document warrants them. The CHRO lens matters whenever a plan changes who does what: restructurings, operating model shifts, automation cases and anything with "freed capacity" in it. Those documents tend to be precise about the savings and vague about the people, and that vagueness is exactly what the real CHRO interrogates. It works standalone; you do not need the rest of the suite installed.
 
-## Seat this persona on the review board
-
-This skill works standalone, and its persona can also join the full review-board skill as a bench member:
-
-1. Copy `references/persona.md` from this folder into your INSTALLED review-board skill folder in OneDrive, renamed to the pattern the board expects: `/Documents/Cowork/skills/review-board/references/persona-chro.md`.
-2. Start a NEW Cowork conversation (skills and their files are discovered at conversation start).
-3. Convene it by name: "run the review board with the CFO, CISO and CHRO".
-
-The board ships with 11 reference files plus its README, and Cowork allows 20 companion files per skill. Microsoft does not say whether the README counts towards that limit, so at least 8 bench personas fit at once; to seat all 9 safely, delete README.md from your installed copy of review-board (Cowork only needs SKILL.md and the references folder).
 
 ## Status
 

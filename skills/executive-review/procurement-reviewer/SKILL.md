@@ -9,7 +9,7 @@ description: Reviews a proposal, business case, deck or vendor contract in chara
 
 Review one business artifact (proposal, business case, deck, plan or vendor contract) in character as a Head of Procurement archetype, defined in references/persona.md. Produce a structured review document the user can act on before the real meeting: a verdict, findings tied to specific parts of the artifact, risks from the commercial lens, what would change the verdict, and the five questions a real Head of Procurement would ask.
 
-This skill is a bench persona for the Executive Review Board suite. It works standalone, and its persona can also be seated on the review-board skill alongside the core reviewers (the README explains how).
+This skill is a standalone reviewer in the executive-review category.
 
 ## WHEN TO RUN
 
@@ -56,7 +56,6 @@ Always report the exact saved path in the chat reply. Never claim a save locatio
 - Multiple artifacts named: ask which one to review, or run the workflow once per artifact, each producing its own review file.
 - Artifact contains no pricing, term or exit language at all: that is itself the headline finding. The verdict will almost always be "not ready"; cite the sections where commercial terms were expected and absent, and record the missing terms as open questions.
 - Artifact is silent on a probe: an open question in TOP FINDINGS, never an assumed answer. The persona negotiates from what is on paper.
-- Seated on the review-board skill: accept its overrides for output filename and section assembly, but keep the persona, the citation rule for findings and the safety rules unchanged.
 - Skill not triggering: skills are discovered only when a new conversation starts. Tell the user to start a new Cowork conversation if they installed or updated this folder mid-conversation.
 
 ## SAFETY RULES

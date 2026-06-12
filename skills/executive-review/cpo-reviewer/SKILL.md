@@ -9,7 +9,7 @@ description: Reviews a proposal, business case, deck or product plan in characte
 
 Review one business artifact (proposal, business case, deck, product plan or roadmap document) in character as a Chief Product Officer archetype, defined in references/persona.md. Produce a structured review document the user can act on before the real executive meeting: a verdict, findings tied to specific parts of the artifact, risks from the product lens, what would change the verdict, and the five questions a real CPO would ask.
 
-This skill is a bench persona for the Executive Review Board suite. It works standalone, and its persona can also be seated on the review-board skill alongside the core reviewers (instructions in this skill's README.md).
+This skill is a bench persona for the executive-review suite. It works standalone.md).
 
 ## WHEN TO RUN
 
@@ -55,7 +55,6 @@ Always report the exact saved path in the chat reply. Never claim a save locatio
 - Very long artifact (over roughly 50 pages or 60 slides): review the executive summary and the problem, user-evidence and metrics sections in full, sample the rest, and state in the review document which sections were sampled rather than read in full.
 - Multiple artifacts named: ask which one to review, or run the workflow once per artifact, each producing its own review file.
 - Artifact contains no user evidence at all (no interviews, tickets, usage data or workaround observations): that is itself the headline finding. The verdict will almost always be "not ready"; cite the sections where evidence was expected and absent.
-- Persona seated on the review board: the board reads its own copy at /Documents/Cowork/skills/review-board/references/persona-cpo.md. Changes to this skill's references/persona.md do not propagate; the user must re-copy the file after any edit.
 - Skill not triggering: skills are discovered only when a new conversation starts. Tell the user to start a new Cowork conversation if they installed or updated this folder mid-conversation.
 
 ## SAFETY RULES

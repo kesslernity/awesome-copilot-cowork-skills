@@ -5,13 +5,12 @@ description: Reviews a proposal, business case, deck or plan in character as a C
 
 ## PURPOSE
 
-Review a document the way a COO would before approving it: probe execution feasibility, capacity, timeline credibility and dependencies, then write the findings into a review document the author can act on before the real meeting. This skill is part of the Executive Review Board suite. It works standalone; the review-board skill orchestrates all seven reviewers. It composes the Word, PDF, PowerPoint, Excel and Enterprise Search built-in skills and produces one Word document as output.
+Review a document the way a COO would before approving it: probe execution feasibility, capacity, timeline credibility and dependencies, then write the findings into a review document the author can act on before the real meeting. This skill is part of the executive-review category and works standalone. It composes the Word, PDF, PowerPoint, Excel and Enterprise Search built-in skills and produces one Word document as output.
 
 ## WHEN TO RUN
 
 - The user asks for a COO review, an operations review, or an execution-lens review of a proposal, business case, deck, plan or budget document.
 - The user wants to pressure-test a document before a steering committee, board meeting or executive sign-off.
-- The review-board skill invokes this skill as one of its seven reviewers.
 
 Do not run this skill to edit, rewrite or proofread the document. It reviews; it does not fix.
 
@@ -27,7 +26,7 @@ Do not run this skill to edit, rewrite or proofread the document. It reviews; it
 1. **Identify the artifact.** If the user named a file, open it with the matching built-in skill: Word for .docx, PDF for .pdf, PowerPoint for .pptx, Excel for .xlsx. If you cannot find the file at the path given, use Enterprise Search to locate candidates, state which file you found, and confirm with the user before proceeding. If the user pasted text, treat the pasted text as the artifact and ask for a short name for it.
 2. **Derive the artifact name** for the output file: take the source filename without its extension (or the user-supplied short name), lowercase it, and replace spaces with hyphens. Example: "Q3 Expansion Case.docx" becomes q3-expansion-case.
 3. **Load the persona.** Read references/persona.md in full and stay strictly in character as the COO archetype for the rest of this workflow. Apply its MANDATE, WHAT I PROBE FIRST, RED FLAGS, WHAT CONVINCES ME, and VOCABULARY AND TONE sections to everything you write from here on.
-4. **Load company context if it exists.** Check whether /Documents/Cowork/org-profile.md exists in the user's OneDrive. If it does, read it and use it as company context for the review. If it does not, proceed with a generic review and add one note in the review document: an org profile at /Documents/Cowork/org-profile.md would sharpen this review, and the template is in the review-board skill folder at /Documents/Cowork/skills/review-board/.
+4. **Load company context if it exists.** Check whether /Documents/Cowork/org-profile.md exists in the user's OneDrive. If it does, read it and use it as company context for the review. If it does not, proceed with a generic review and add one note in the review document: an org profile at /Documents/Cowork/org-profile.md would sharpen this review, and the template is in this skill's references folder.
 5. **Read the artifact end to end** before forming any judgement. As you read, collect direct quotes and their locations (section heading, page number or slide number) for anything you will cite. For spreadsheets, note tab names and cell ranges. Do not skim and do not review from the executive summary alone.
 6. **Apply the persona probes to the document.** Work through the ten probes in WHAT I PROBE FIRST and the RED FLAGS list, checking each against the actual content of the artifact. Record where the document answers a probe well and where it is silent or hand-waving.
 7. **Compose the review** with exactly this structure, in the persona's voice:
@@ -82,4 +81,3 @@ Before reporting back, confirm every box:
 - [ ] No facts invented beyond the artifact and org-profile.md.
 - [ ] File saved to /Documents/Cowork/reviews/ with the correct name; the reported path is where the file actually is.
 - [ ] DRAFT label and archetype note are present in the document.
-- [ ] If org-profile.md was missing, the review notes it and points to /Documents/Cowork/skills/review-board/ for the template.

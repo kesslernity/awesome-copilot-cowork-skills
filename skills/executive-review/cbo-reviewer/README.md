@@ -2,7 +2,7 @@
 
 > Pressure-test the commercial side of a proposal before a real Chief Business Officer does it for you, in the meeting.
 
-One seat of the Executive Review Board suite. Works standalone; the review-board skill in this category runs all seven reviewers on the same artifact.
+One seat of the executive-review suite. Works standalone.
 
 ## What it produces
 
@@ -31,7 +31,7 @@ If `/Documents/Cowork/org-profile.md` exists in your OneDrive, the review uses i
 
 ## Why this exists
 
-Most proposals meet their first hostile commercial reading inside the actual executive meeting, which is the most expensive place to learn that the deal terms are one-sided or that the demand evidence is pilot enthusiasm. This skill is the Chief Business Officer seat of the Executive Review Board suite, built for this repository in response to recurring requests for a way to pressure-test documents before real executive reviews. The orchestrating skill and the org profile template live in [../review-board/](../review-board/).
+Most proposals meet their first hostile commercial reading inside the actual executive meeting, which is the most expensive place to learn that the deal terms are one-sided or that the demand evidence is pilot enthusiasm. This skill is the Chief Business Officer seat of the executive-review suite, built for this repository in response to recurring requests for a way to pressure-test documents before real executive reviews. The org profile template lives in this skill's references folder.
 
 ## Status
 

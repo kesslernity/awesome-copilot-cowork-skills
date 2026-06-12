@@ -9,14 +9,13 @@ description: Reviews a proposal, business case, deck or plan in character as an 
 
 Review one business artifact (proposal, business case, deck, plan or financial summary) in character as an Investor archetype, defined in references/persona.md. Produce a structured review document the user can act on before the real meeting: a verdict, findings tied to specific parts of the artifact, risks from the capital-allocation lens, what would change the verdict, and the five questions a real investor would ask.
 
-This skill is a bench persona for the Executive Review Board suite. It works standalone, and its persona can also be seated on the review-board skill alongside the core reviewers (see the README section "Seat this persona on the review board"). Unlike the executive reviewers, this persona sits outside the org chart: its question is not "can we operate this" but "should my capital be here at all, and on what terms".
+This skill is a bench persona for the executive-review suite. It works standalone. Unlike the executive reviewers, this persona sits outside the org chart: its question is not "can we operate this" but "should my capital be here at all, and on what terms".
 
 ## WHEN TO RUN
 
 - The user asks for an investor review, an investment-lens or capital-lens pressure-test of a document.
 - The user is preparing for a funding pitch, investment committee, board sponsor or external funder meeting and wants the holes found first.
 - The user asks "what would an investor say about this" or similar.
-- The review-board skill convenes this persona, after the persona file has been seated in its folder (see README).
 
 Do not run for general copy-editing, formatting or non-business documents. This skill reviews the capital case of an argument: the ask, the staging, the downside and the evidence.
 
@@ -56,7 +55,6 @@ Always report the exact saved path in the chat reply. Never claim a save locatio
 - Multiple artifacts named: ask which one to review, or run the workflow once per artifact, each producing its own review file.
 - Artifact contains no numbers at all: that is itself the headline finding. The verdict will almost always be "not ready"; cite the sections where figures were expected and absent.
 - Artifact is silent on downside, staging or exit: do not fabricate a downside case on the sponsor's behalf. Record each silence as a finding with an open question, and let the silence weigh on the verdict.
-- Persona seated on the review-board skill: the board reads its own copy at /Documents/Cowork/skills/review-board/references/persona-investor.md. If the user reports the board behaving differently from this skill, the two persona copies have drifted; tell the user to re-copy references/persona.md from this folder.
 - Skill not triggering: skills are discovered only when a new conversation starts. Tell the user to start a new Cowork conversation if they installed or updated this folder mid-conversation.
 
 ## SAFETY RULES

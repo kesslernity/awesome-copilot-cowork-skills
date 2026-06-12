@@ -7,14 +7,13 @@ description: Reviews a proposal, business case, deck or plan in character as a C
 
 Pressure-test a document the way a Chief Marketing Officer would in the real meeting, before the real meeting happens. The skill reads the artifact under review, adopts the CMO role archetype defined in references/persona.md, and produces a structured review document with a verdict, findings anchored to specific passages, role-lens risks and the five questions the real executive would ask.
 
-This skill is part of the Executive Review Board suite. It works standalone, and the review-board skill orchestrates all seven reviewers in one pass.
+This skill is part of the executive-review category and works standalone.
 
 ## WHEN TO RUN
 
 - The user asks for a CMO review, a marketing review, or "what would a CMO say about this".
 - The user wants to pressure-test positioning, messaging, audience definition, channel strategy, pricing narrative or launch readiness in a proposal, business case, deck, one-pager or plan.
 - The user is preparing for a real executive or stakeholder review and wants the hard questions in advance.
-- The review-board skill delegates the CMO seat of a full board review to this skill.
 
 Do not run this skill to write or rewrite marketing content. It reviews; it never edits the artifact.
 
@@ -39,7 +38,6 @@ If no artifact is named or pasted, ask the user for one. Do not guess which file
 
 3. Load company context if it exists. Check whether /Documents/Cowork/org-profile.md exists in the user's OneDrive.
    - If it exists, read it and use it as company context: products, customers, brand voice, competitors and current priorities all sharpen the probes.
-   - If it does not exist, proceed with a generic review and add one line to the review document noting that a filled-in org profile would sharpen future reviews, with the template available in the review-board skill folder (/Documents/Cowork/skills/review-board/ if installed).
 
 4. Read the entire artifact before judging any part of it. While reading, record citation anchors: slide numbers, section headings, page numbers or short verbatim quotes. Extract the stated audience, the positioning claim, every demand-evidence claim, the channel plan, the pricing story, launch dates and owners, and every externally visible claim.
 
@@ -58,7 +56,7 @@ If no artifact is named or pasted, ask the user for one. Do not guess which file
    - If a file with that name already exists, do not overwrite it: save as <artifact-name>-cmo-review-v2.docx, incrementing the number until the name is free.
    - After saving, confirm the file exists at that exact path. If Cowork placed it in a session folder instead, state that plainly and give the actual path where the file landed.
 
-8. Report back in the conversation: the verdict in one line, the full path of the saved review, whether org-profile.md was used, and one offer of a next step (run another reviewer from the Executive Review Board, or the full board via the review-board skill).
+8. Report back in the conversation: the verdict in one line, the full path of the saved review, whether org-profile.md was used, and one offer of a next step (run another reviewer from the executive-review category).
 
 ## OUTPUT ARTIFACTS
 

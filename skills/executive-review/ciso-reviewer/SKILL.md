@@ -5,7 +5,7 @@ description: Reviews a proposal, business case, deck or plan in character as a C
 
 ## PURPOSE
 
-Review a proposal, business case, deck or plan through the eyes of a Chief Information Security Officer archetype, and produce a structured DRAFT review document the author can use to fix weaknesses before the real executive meeting. This skill is the security seat in the Executive Review Board suite: it runs standalone, and the review-board skill in this category orchestrates all seven reviewers together.
+Review a proposal, business case, deck or plan through the eyes of a Chief Information Security Officer archetype, and produce a structured DRAFT review document the author can use to fix weaknesses before the real executive meeting. This skill is the security seat in the executive-review suite and runs standalone.
 
 ## WHEN TO RUN
 
@@ -23,7 +23,7 @@ Run when the user asks for a CISO review, a security or compliance pressure-test
 1. Locate the artifact. If the user named a file, use the Enterprise Search built-in skill to find it in OneDrive or SharePoint. If exactly one file matches, confirm the path in one line and proceed. If several match, list them and ask the user to pick one. If the user pasted text, skip the search and treat the pasted text as the artifact.
 2. Read the artifact in full using the matching built-in skill: Word for .docx, PowerPoint for .pptx, PDF for .pdf, Excel for .xlsx. Record section headings and page or slide numbers as you read; every finding must cite them later.
 3. Load references/persona.md from this skill folder. Adopt the persona completely for the rest of the workflow: its mandate, the ten probes, the red flags, the evidence standards, the vocabulary and the stated blind spots. Stay strictly in character in all review text.
-4. Check whether /Documents/Cowork/org-profile.md exists. If it does, read it and use it as company context (sector, regulators, named systems, risk appetite). If it does not, proceed with a generic mid-to-large company assumption and add one line to the review header noting that an organisation profile would sharpen the review, pointing to the template in the review-board skill folder (skills/executive-review/review-board/).
+4. Check whether /Documents/Cowork/org-profile.md exists. If it does, read it and use it as company context (sector, regulators, named systems, risk appetite). If it does not, proceed with a generic mid-to-large company assumption and add one line to the review header noting that an organisation profile would sharpen the review, pointing to the template in this skill's references folder.
 5. Work through the persona's WHAT I PROBE FIRST list against the artifact. For each probe, mark whether the artifact answers it, answers it partially, or is silent. Then check the persona's RED FLAGS list against the artifact's actual wording, quoting any phrase that triggers one.
 6. Write the review with exactly these sections, in this order:
    - VERDICT: exactly one of "proceed", "proceed with conditions" or "not ready", followed by two to three sentences of justification in the persona's voice. If "proceed with conditions", list the conditions as bullets.
@@ -66,7 +66,6 @@ Before reporting done, confirm:
 - [ ] The verdict is exactly one of: proceed, proceed with conditions, not ready.
 - [ ] There are exactly five interrogation questions, ordered hardest first.
 - [ ] The review reads in the persona's voice (controls, evidence, owned risk), with its blind spots in mind, not as generic reviewer prose.
-- [ ] org-profile.md was either loaded as context or its absence noted in the review header with a pointer to the review-board template.
 - [ ] The .docx is labelled DRAFT and the exact saved path under /Documents/Cowork/reviews/ was reported to the user.
 - [ ] No existing file was overwritten or deleted.
 - [ ] The artifact under review is unchanged.

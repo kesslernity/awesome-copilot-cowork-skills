@@ -29,7 +29,7 @@ The persona lives in `references/persona.md`: mandate, ten probes, red flags, wh
 
 ## Why this exists
 
-This skill is one of seven reviewers in the Executive Review Board suite (see the [review-board](../review-board/) folder, which orchestrates all seven and ships the org profile template). It answers a recurring ask from people preparing business cases: pressure-test the document against the executive who will actually interrogate it, before the meeting, not during it. Finance review is the gate where most proposals stall, so the CFO reviewer is the one to run first. It works standalone; you do not need the rest of the suite installed.
+This skill is one of seven reviewers in the executive-review suite. It answers a recurring ask from people preparing business cases: pressure-test the document against the executive who will actually interrogate it, before the meeting, not during it. Finance review is the gate where most proposals stall, so the CFO reviewer is the one to run first. It works standalone; you do not need the rest of the suite installed.
 
 ## Status
 

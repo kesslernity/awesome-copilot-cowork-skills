@@ -9,14 +9,13 @@ description: Reviews a proposal, business case, deck or rollout plan in characte
 
 Review one business artifact (proposal, business case, deck, rollout plan or pilot summary) in character as a Works Council Representative archetype, defined in references/persona.md. Produce a structured review document the user can act on before the real consultation meeting: a verdict, findings tied to specific parts of the artifact, risks from the employee-representative lens, what would change the verdict, and the five questions a real works council representative would ask.
 
-This skill is a bench persona for the Executive Review Board suite. It works standalone, and its persona can also be seated on the review-board skill (the README explains how).
+This skill is a bench persona for the executive-review suite. It works standalone.
 
 ## WHEN TO RUN
 
 - The user asks for a works council review, a staff council review, or an employee-representative pressure-test of a document.
 - The user is preparing for a real works council, staff council or employee consultation meeting and wants the holes found first.
 - The user asks "what would the works council say about this" or similar.
-- The user wants this persona on the full review board: that runs through the review-board skill with the persona seated there (see the README of this skill), not through this skill.
 
 Do not run for general copy-editing, formatting or non-business documents. This skill reviews how an artifact treats the employees it affects.
 
@@ -55,7 +54,6 @@ Always report the exact saved path in the chat reply. Never claim a save locatio
 - Very long artifact (over roughly 50 pages or 60 slides): review the sections on people, data, monitoring, rollout and change management in full, sample the rest, and state in the review document which sections were sampled rather than read in full.
 - Multiple artifacts named: ask which one to review, or run the workflow once per artifact, each producing its own review file.
 - Artifact never mentions the employees it affects: that is itself the headline finding. The verdict will almost always be "not ready"; cite the sections where the people in scope were expected and absent.
-- User asks for the full board: point to the review-board skill. This persona joins it through the seating instructions in this skill's README, not by the board calling this skill.
 - Skill not triggering: skills are discovered only when a new conversation starts. Tell the user to start a new Cowork conversation if they installed or updated this folder mid-conversation.
 
 ## SAFETY RULES

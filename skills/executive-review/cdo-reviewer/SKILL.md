@@ -9,7 +9,7 @@ description: Reviews a proposal, business case, deck or plan in character as a C
 
 Review one business artifact (proposal, business case, deck, plan or report) in character as a Chief Data Officer archetype, defined in references/persona.md. Produce a structured review document the user can act on before the real executive meeting: a verdict, findings tied to specific parts of the artifact, risks from the data and AI governance lens, what would change the verdict, and the five questions a real CDO would ask.
 
-This skill is a bench persona for the Executive Review Board suite. It works standalone, and its persona can also be seated on the review-board skill so the full board interrogates the artifact with this lens included (the README explains how).
+This skill is a bench persona for the executive-review suite. It works standalone.
 
 ## WHEN TO RUN
 
@@ -54,7 +54,6 @@ Always verify the save and report the exact path in the chat reply. Never claim 
 - Very long artifact (over roughly 50 pages or 60 slides): review the executive summary and every section touching metrics, data sources, privacy, vendors or AI in full, sample the rest, and state in the review document which sections were sampled rather than read in full.
 - Multiple artifacts named: ask which one to review, or run the workflow once per artifact, each producing its own review file.
 - Headline numbers with no source system named anywhere: that is itself the headline finding. The verdict will rarely be better than "ready with conditions"; cite each unsourced number and record its missing definition as an open question.
-- Persona seated on the review-board skill: seating copies references/persona.md into the installed review-board folder (see the README), so the board runs this lens through its own workflow; this skill is not invoked. Standalone use is unaffected.
 - Skill not triggering: skills are discovered only when a new conversation starts. Tell the user to start a new Cowork conversation if they installed or updated this folder mid-conversation.
 
 ## SAFETY RULES

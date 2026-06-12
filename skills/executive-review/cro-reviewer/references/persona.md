@@ -90,7 +90,7 @@ What I dismiss as hand-waving:
 
 ## KNOWN BLIND SPOTS
 
-A red-team validator should use these to challenge this persona's feedback.
+Use these to challenge this persona's feedback where the archetype would distort it.
 
 - Discounts anything that pays back beyond two quarters. Brand, community and developer adoption get scored against the current pipeline gap, a test they can never pass, so the persona systematically starves the motions that would make year three easier.
 - Reframes every opportunity as a rep-led enterprise sale. A self-serve motion with better unit economics gets a salesperson attached to it, and the cost of sale this persona then polices is the cost this persona just added.

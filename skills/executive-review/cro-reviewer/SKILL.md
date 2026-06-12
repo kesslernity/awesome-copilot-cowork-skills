@@ -7,13 +7,12 @@ description: Reviews a proposal, business case, deck or plan in character as a C
 
 Pressure-test a document through the eyes of a Chief Revenue Officer before it faces a real one. You read the artifact, adopt the CRO role archetype defined in references/persona.md, and produce a review document with a clear verdict, findings anchored to specific parts of the artifact, revenue risks, the evidence that would change the verdict, and the five questions the real executive would ask in the meeting.
 
-This skill is part of the Executive Review Board suite. It works standalone; the review-board skill in the same category orchestrates all seven reviewers.
+This skill is part of the executive-review category and works standalone.
 
 ## WHEN TO RUN
 
 - The user asks for a CRO, revenue, sales leadership or commercial review of a proposal, business case, deck, pricing plan, go-to-market plan or forecast.
 - The user wants a document pressure-tested before a real executive review, board meeting or deal review.
-- The review-board skill delegates the CRO seat to this skill.
 
 Do not run this for general copy-editing or formatting requests; this skill judges substance through one executive lens only.
 
@@ -28,7 +27,7 @@ Do not run this for general copy-editing or formatting requests; this skill judg
 
 1. Identify the artifact. If the user named a file without a full path, use the Enterprise Search built-in skill to locate it across OneDrive and SharePoint. If more than one candidate matches, list them and ask the user to confirm before reading anything. Open the confirmed file with the matching built-in skill: Word for .docx, PowerPoint for .pptx, PDF for .pdf, Excel for .xlsx. If the user pasted text, treat the pasted text as the artifact and confirm the short name for the output filename.
 2. Read references/persona.md in full and adopt that persona for every judgement in this review. Do not soften it. Never present the persona as a real, named person, and never invent data about the business under review: where evidence is missing, say so and ask for it.
-3. Check whether /Documents/Cowork/org-profile.md exists in the user's OneDrive. If it exists, read it and use it as company context for the whole review. If it does not exist, proceed generic and add one line to the review header noting that no org profile was found, and that creating one from the template in the review-board skill folder would sharpen future reviews.
+3. Check whether /Documents/Cowork/org-profile.md exists in the user's OneDrive. If it exists, read it and use it as company context for the whole review. If it does not exist, proceed generic and add one line to the review header noting that no org profile was found, and that creating one from the template in this skill's references folder would sharpen future reviews.
 4. Read the artifact end to end before judging anything. Record its structure (section headings, slide numbers, page numbers) so that every finding in step 6 can cite an exact location.
 5. Interrogate the artifact against the persona: work through MANDATE, all ten items in WHAT I PROBE FIRST, RED FLAGS and WHAT CONVINCES ME. For each probe, record whether the artifact answers it, dodges it, or is silent on it.
 6. Write the review with exactly these five sections, in this order:
@@ -53,7 +52,7 @@ No other files are created. The conversation reply restates the verdict and the 
 - Output lands in a session folder: re-save to /Documents/Cowork/reviews/ and report the final confirmed path. Never report a path you have not confirmed.
 - /Documents/Cowork/reviews/ does not exist: create it. If creation fails, save to /Documents/Cowork/ and report that path instead, stating why.
 - Word skill cannot create the file: save the identical content as /Documents/Cowork/reviews/<artifact-name>-cro-review.md and tell the user which format was used and why.
-- Artifact has little revenue-relevant content (for example a pure engineering runbook): say so in the verdict justification, deliver findings only where the CRO lens genuinely applies, and suggest a better-matched reviewer from the Executive Review Board suite.
+- Artifact has little revenue-relevant content (for example a pure engineering runbook): say so in the verdict justification, deliver findings only where the CRO lens genuinely applies, and suggest a better-matched reviewer from the executive-review category.
 - Very long artifact (over roughly 50 pages or slides): review the executive summary plus every section that maps to the persona's MANDATE, and state in the review header exactly which sections were read.
 - Planner or To Do: this skill never writes to Planner or To Do, so the known silent-failure risk does not apply here. All output goes to files.
 

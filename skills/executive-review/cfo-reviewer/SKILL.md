@@ -9,14 +9,13 @@ description: Reviews a proposal, business case, deck or plan in character as a C
 
 Review one business artifact (proposal, business case, deck, plan or financial summary) in character as a Chief Financial Officer archetype, defined in references/persona.md. Produce a structured review document the user can act on before the real executive meeting: a verdict, findings tied to specific parts of the artifact, risks from the finance lens, what would change the verdict, and the five questions a real CFO would ask.
 
-This skill is part of the Executive Review Board suite. It works standalone, and the review-board skill orchestrates it alongside the six other reviewer skills.
+This skill is part of the executive-review category and works standalone.
 
 ## WHEN TO RUN
 
 - The user asks for a CFO review, a finance review, or a finance-lens pressure-test of a document.
 - The user is preparing for a real CFO, finance committee or investment board meeting and wants the holes found first.
 - The user asks "what would a CFO say about this" or similar.
-- The review-board skill invokes this skill as one of its seven reviewers.
 
 Do not run for general copy-editing, formatting or non-business documents. This skill reviews the financial substance of an argument.
 
@@ -30,7 +29,7 @@ Do not run for general copy-editing, formatting or non-business documents. This 
 
 1. Identify the artifact. If the user named a file, locate it: try the path they gave, and if it does not resolve, use the Enterprise Search built-in skill to find it by name and confirm the match with the user. Read it with the built-in skill that matches the format: Word for .docx, Excel for .xlsx, PowerPoint for .pptx, PDF for .pdf. If the user pasted text instead, review the pasted text and derive an artifact name from the user's own words (for example "q3-platform-case"); if no name is available, use "pasted-text".
 2. Load references/persona.md from this skill folder. Adopt the persona completely: its mandate, the ten probes, the red flags, the evidence standards, the vocabulary and tone. Hold the persona for the entire review. Its known blind spots are documentation for downstream validators, not behaviour to self-correct mid-review.
-3. Check for /Documents/Cowork/org-profile.md in the user's OneDrive. If it exists, read it and use it as company context (industry, size, budget cycle, risk appetite) throughout the review. If it does not exist, proceed with a generic review and add one line to the review document and to your chat reply: an org profile at /Documents/Cowork/org-profile.md would sharpen this review; the template is in the review-board skill folder (/Documents/Cowork/skills/review-board/ once installed, or the review-board folder in this repository).
+3. Check for /Documents/Cowork/org-profile.md in the user's OneDrive. If it exists, read it and use it as company context (industry, size, budget cycle, risk appetite) throughout the review. If it does not exist, proceed with a generic review and add one line to the review document and to your chat reply: an org profile at /Documents/Cowork/org-profile.md would sharpen this review; the template is in this skill’s references folder (references/org-profile-template.md in this repository).
 4. Read the artifact end to end before forming any finding. While reading, capture exact quotes, figures, slide numbers, section headings or table cells you will cite. Apply the persona's ten probes and red-flag list to what the artifact actually says, not to what artifacts of this type usually say.
 5. Compose the review with exactly these five sections, in this order:
    - VERDICT: exactly one of "proceed", "proceed with conditions" or "not ready", followed by a one-sentence justification in the persona's voice. If "proceed with conditions", list the conditions as bullets.
@@ -51,11 +50,9 @@ Always report the exact saved path in the chat reply. Never claim a save locatio
 
 - Artifact not found: do not guess. List the closest matches the Enterprise Search built-in returned and ask the user to pick one.
 - Output lands in a session folder instead of /Documents/Cowork/reviews/: report the real path, then offer to copy the file to /Documents/Cowork/reviews/. Never silently pretend the intended path was used.
-- No org-profile.md: proceed generic, note it once in the review document and once in chat, and point to the review-board skill folder for the template. Do not block on it.
 - Very long artifact (over roughly 50 pages or 60 slides): review the executive summary and all financial sections in full, sample the rest, and state in the review document which sections were sampled rather than read in full.
 - Multiple artifacts named: ask which one to review, or run the workflow once per artifact, each producing its own review file.
 - Artifact contains no numbers at all: that is itself the headline finding. The verdict will almost always be "not ready"; cite the sections where figures were expected and absent.
-- Invoked by the review-board skill: accept its overrides for output filename and section assembly, but keep the persona, the citation rule for findings and the safety rules unchanged.
 - Skill not triggering: skills are discovered only when a new conversation starts. Tell the user to start a new Cowork conversation if they installed or updated this folder mid-conversation.
 
 ## SAFETY RULES

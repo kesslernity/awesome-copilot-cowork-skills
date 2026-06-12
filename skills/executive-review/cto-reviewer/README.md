@@ -29,7 +29,7 @@ The artifact you submit is read, never modified. If `/Documents/Cowork/org-profi
 
 ## Why this exists
 
-This is one seat of the Executive Review Board suite: seven executive archetypes that interrogate a document the way a real leadership team would, so the author fixes the gaps before the actual meeting. It answers a recurring ask from people shipping business cases and decks: a way to pressure-test a document against hard executive questions before the real review. The CTO seat covers the questions that most often sink technology proposals: scale assumptions, hidden debt, vendor exit terms and capacity displacement. It works standalone; the [review-board](../review-board/) skill runs all seven reviewers in one pass.
+This is one seat of the executive-review suite: executive archetypes that interrogate a document the way a real leadership team would, so the author fixes the gaps before the actual meeting. It answers a recurring ask from people shipping business cases and decks: a way to pressure-test a document against hard executive questions before the real review. The CTO seat covers the questions that most often sink technology proposals: scale assumptions, hidden debt, vendor exit terms and capacity displacement. It works standalone.
 
 ## Status
 

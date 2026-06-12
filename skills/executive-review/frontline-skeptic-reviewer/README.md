@@ -29,17 +29,8 @@ The persona lives in `references/persona.md`: mandate, ten probes, red flags, wh
 
 ## Why this exists
 
-The Executive Review Board suite ships seven C-suite reviewers, but plenty of plans clear the boardroom and then die on the floor. This skill is a bench persona for that suite: it extends the board below the C-suite to the person who does the work the document describes, asks where the extra clicks go, who covers the desk during training, and what got taken away to make room. It works standalone; you do not need the rest of the suite installed.
+The executive-review suite ships seven C-suite reviewers, but plenty of plans clear the boardroom and then die on the floor. This skill is a bench persona for that suite: it extends the board below the C-suite to the person who does the work the document describes, asks where the extra clicks go, who covers the desk during training, and what got taken away to make room. It works standalone; you do not need the rest of the suite installed.
 
-## Seat this persona on the review board
-
-This skill works standalone, and its persona can also join the full [review-board](../review-board/) skill as a bench member:
-
-1. Copy `references/persona.md` from this folder into your INSTALLED review-board skill folder in OneDrive, renamed to the pattern the board expects: `/Documents/Cowork/skills/review-board/references/persona-frontline-skeptic.md`.
-2. Start a NEW conversation (skills and their files are discovered at conversation start).
-3. Convene it by name: "run the review board with the CFO, CISO and Frontline Skeptic".
-
-The board ships with 11 reference files plus its README, and Cowork allows 20 companion files per skill. Microsoft does not say whether the README counts towards that limit, so at least 8 bench personas fit at once; to seat all 9 safely, delete README.md from your installed copy of review-board (Cowork only needs SKILL.md and the references folder).
 
 ## Status
 

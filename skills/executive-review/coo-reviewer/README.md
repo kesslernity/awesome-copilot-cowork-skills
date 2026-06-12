@@ -27,7 +27,7 @@ A DRAFT Word review of your proposal, business case, deck or plan, written in ch
 
 ## Why this exists
 
-This skill is one of seven reviewers in the [Executive Review Board suite](../review-board/), which exists because people keep asking for a way to pressure-test documents before real executive reviews: the questions that kill a proposal in the meeting are predictable, and it is cheaper to face them from an archetype first. The COO is the reviewer who checks whether the plan survives contact with a real calendar, a real org chart and a finite amount of people's time. Run it standalone, or let the [review-board](../review-board/) skill convene all seven. Drop an `org-profile.md` into `/Documents/Cowork/` (template in the review-board folder) and the review uses your company context instead of staying generic.
+This skill is one of the reviewers in the executive-review suite, which exists because people keep asking for a way to pressure-test documents before real executive reviews: the questions that kill a proposal in the meeting are predictable, and it is cheaper to face them from an archetype first. The COO is the reviewer who checks whether the plan survives contact with a real calendar, a real org chart and a finite amount of people's time. Run it standalone, or run the other reviewers in the category for more lenses. Drop an `org-profile.md` into `/Documents/Cowork/` (template in this skill's references folder) and the review uses your company context instead of staying generic.
 
 ## Status
 

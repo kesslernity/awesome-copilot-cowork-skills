@@ -9,14 +9,13 @@ description: Reviews a proposal, business case, deck or plan in character as a C
 
 Review one business artifact (proposal, business case, deck, plan or restructuring paper) in character as a Chief Human Resources Officer archetype, defined in references/persona.md. Produce a structured review document the user can act on before the real executive meeting: a verdict, findings tied to specific parts of the artifact, risks from the people and organisation lens, what would change the verdict, and the five questions a real CHRO would ask.
 
-This skill is a bench persona for the Executive Review Board suite. It works standalone, and its persona can also be seated on the review-board skill alongside the reviewers that ship with it (see the README for the bench mechanism).
+This skill is a standalone reviewer in the executive-review category.
 
 ## WHEN TO RUN
 
 - The user asks for a CHRO review, an HR review, or a people-lens pressure-test of a document.
 - The user is preparing for a real CHRO, people committee, works council or consultation meeting and wants the holes found first.
 - The user asks "what would HR say about this" or similar.
-- The review-board skill convenes this persona after it has been seated on the bench (persona-chro.md copied into the installed review-board folder).
 
 Do not run for general copy-editing, formatting or non-business documents. This skill reviews the people and organisation substance of an argument.
 
@@ -56,7 +55,6 @@ Always report the exact saved path in the chat reply. Never claim a save locatio
 - Multiple artifacts named: ask which one to review, or run the workflow once per artifact, each producing its own review file.
 - Artifact says nothing about people at all: that is itself the headline finding. The verdict will almost always be "not ready"; cite the sections where role impact, change load or consultation were expected and absent, and record them as open questions.
 - Genuinely additive initiative (new team, new capability, no role losses): the persona's blind spots note it can over-apply restructuring suspicion. Still run all ten probes, but anchor findings in what the artifact says, not in a redundancy programme it does not describe.
-- Invoked by the review-board skill (persona seated on the bench): accept its overrides for output filename and section assembly, but keep the persona, the citation rule for findings and the safety rules unchanged.
 - Skill not triggering: skills are discovered only when a new conversation starts. Tell the user to start a new Cowork conversation if they installed or updated this folder mid-conversation.
 
 ## SAFETY RULES

@@ -9,7 +9,7 @@ description: Reviews a proposal, business case, deck or rollout plan in characte
 
 Review one business artifact (proposal, business case, deck, rollout plan or process change) in character as a Frontline Skeptic archetype, defined in references/persona.md: the experienced staff member who does the work the document describes and has watched several initiatives arrive with a deck and leave without a trace. Produce a structured review document the user can act on before the plan meets a busy Tuesday: a verdict, findings tied to specific parts of the artifact, risks from the frontline lens, what would change the verdict, and the five questions this person would ask in the real meeting.
 
-This skill is a bench persona for the Executive Review Board suite. It works standalone, and its persona can also be seated on the review-board skill (see the README for the seating instructions).
+This skill is a bench persona for the executive-review suite. It works standalone.
 
 ## WHEN TO RUN
 
@@ -55,7 +55,6 @@ Always report the exact saved path in the chat reply. Never claim a save locatio
 - Very long artifact (over roughly 50 pages or 60 slides): review the executive summary and every section touching frontline process, training, rollout, adoption and support in full, sample the rest, and state in the review document which sections were sampled rather than read in full.
 - Multiple artifacts named: ask which one to review, or run the workflow once per artifact, each producing its own review file.
 - Artifact never names a team or role that does the work: that is itself the headline finding. The verdict will almost always be "not ready"; cite the sections where a named team was expected and absent.
-- Persona seated on the review board: the review-board skill loads the copied persona file directly (see the README); it does not invoke this skill. Nothing in this workflow changes for standalone runs.
 - Skill not triggering: skills are discovered only when a new conversation starts. Tell the user to start a new Cowork conversation if they installed or updated this folder mid-conversation.
 
 ## SAFETY RULES

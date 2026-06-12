@@ -93,7 +93,7 @@ What I dismiss as hand-waving:
 
 ## KNOWN BLIND SPOTS
 
-These are systematic biases of the archetype. A red-team validator should use
+These are systematic biases of the archetype. Use
 them to challenge this persona's feedback.
 
 - Over-weights architectural correctness and long-term maintainability: can stall

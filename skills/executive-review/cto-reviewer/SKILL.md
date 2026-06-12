@@ -7,11 +7,11 @@ description: Reviews a proposal, business case, deck or plan in character as a C
 
 Review one business artifact (proposal, business case, deck or plan) through the eyes of a Chief Technology Officer archetype, and produce a review document the author can act on before facing a real executive. The review is specific to the artifact: every finding quotes or cites the exact part it is about. The output is a Word document saved to a known OneDrive path.
 
-This skill is part of the Executive Review Board suite. It works standalone. The companion `review-board` skill orchestrates all seven reviewers in one run.
+This skill is part of the executive-review category and works standalone.
 
 ## WHEN TO RUN
 
-Run when the user asks for a CTO review, a technical pressure-test, a technology-lens critique of a document, or "what would a CTO ask about this". Do not run for general copy-editing, formatting or summarisation requests, and do not run when the user wants the full board (route them to the `review-board` skill instead).
+Run when the user asks for a CTO review, a technical pressure-test, a technology-lens critique of a document, or "what would a CTO ask about this". Do not run for general copy-editing, formatting or summarisation requests.
 
 ## INPUTS YOU GATHER
 
@@ -24,7 +24,7 @@ Run when the user asks for a CTO review, a technical pressure-test, a technology
 
 1. Identify and read the artifact. If the user named a file, open it with the matching built-in skill: Word for .docx, PowerPoint for .pptx, Excel for .xlsx, PDF for .pdf. If only a title was given, use the Enterprise Search built-in skill to find it; if more than one file matches, list the matches with their paths and ask the user to pick one. Never guess. If the user pasted text, treat the pasted text as the artifact.
 2. Load `references/persona.md` from this skill folder and stay strictly in character for the entire review: mandate, probes, red flags, evidence standards, vocabulary and tone. The persona is a role archetype, never a real, named individual.
-3. Check whether `/Documents/Cowork/org-profile.md` exists in the user's OneDrive. If it exists, load it and use it as company context throughout the review. If it does not exist, proceed with a generic review and add one line under the review header: "No org profile found. A filled-in /Documents/Cowork/org-profile.md would sharpen this review; the template is in the review-board skill folder."
+3. Check whether `/Documents/Cowork/org-profile.md` exists in the user's OneDrive. If it exists, load it and use it as company context throughout the review. If it does not exist, proceed with a generic review and add one line under the review header: "No org profile found. A filled-in /Documents/Cowork/org-profile.md would sharpen this review; the template is in this skill's references folder."
 4. Map the artifact against the persona. Work through the ten WHAT I PROBE FIRST items, the RED FLAGS list and the WHAT CONVINCES ME evidence standards, noting for each where the artifact answers, dodges or is silent. Record the exact location of each observation: quoted sentence, section heading, slide number or page number.
 5. Compose the review with exactly these five sections, in this order:
    - **VERDICT**: one of `proceed`, `proceed with conditions`, `not ready`, followed by a two-to-three sentence justification. If `proceed with conditions`, list the conditions as numbered items.
@@ -35,7 +35,7 @@ Run when the user asks for a CTO review, a technical pressure-test, a technology
 6. Use the Word built-in skill to create the review document. Title it "CTO Review (DRAFT): <artifact name>", with a header block listing the date (today), the artifact reviewed (filename or "pasted text"), the persona ("Chief Technology Officer, role archetype, not a real individual") and whether an org profile was used.
 7. Save the document as `<artifact-name>-cto-review.docx` in `/Documents/Cowork/reviews/`. Create the folder if it does not exist. If a file with that name already exists, do not overwrite it: save as `<artifact-name>-cto-review-v2.docx` (then -v3 and so on) and tell the user why.
 8. Verify the file is at the exact path you intended, not in a temporary session folder. If it landed anywhere else, save a copy to `/Documents/Cowork/reviews/` and use that as the path of record.
-9. Report back in the conversation: the verdict, the single strongest finding, and the full saved path of the document. Mention that the standalone reviewers and the full-board `review-board` skill are available if the user wants more seats at the table.
+9. Report back in the conversation: the verdict, the single strongest finding, and the full saved path of the document. Mention that the other standalone reviewers are available if the user wants more seats at the table.
 
 ## OUTPUT ARTIFACTS
 

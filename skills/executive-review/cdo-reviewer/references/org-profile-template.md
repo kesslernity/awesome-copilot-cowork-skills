@@ -1,6 +1,6 @@
 # Organisation Profile (template)
 
-This file gives reviewer skills context about YOUR organisation, so persona findings land on your business instead of a generic one. To use it: copy this file, fill in every section, and save it to your OneDrive as `/Documents/Cowork/org-profile.md`. This skill and the review-board skill load that path automatically at the start of every review. A fully filled example for a fictional company ships with the review-board skill as `references/example-org-profile.md`.
+This file gives reviewer skills context about YOUR organisation, so persona findings land on your business instead of a generic one. To use it: copy this file, fill in every section, and save it to your OneDrive as `/Documents/Cowork/org-profile.md`. Reviewer skills load that path automatically at the start of every review.
 
 Rule for the reviewing agent when this template is used unfilled: every item below is UNKNOWN. Do not assume an answer to any of them. Where a persona finding depends on one of these unknowns, state the dependency as an open question instead of guessing.
 
