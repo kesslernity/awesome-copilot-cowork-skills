@@ -33,7 +33,7 @@ This is one seat of the executive-review suite: executive archetypes that interr
 
 ## Status
 
-Tested in Cowork: pending (June 2026). Format-validated against the Agent Skills spec.
+Tested in Cowork: 2026-06-16, passed. Format-validated against the Agent Skills spec.
 
 ## Changelog
 

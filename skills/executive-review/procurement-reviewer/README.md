@@ -34,7 +34,7 @@ This skill is a bench persona for the executive-review suite. The core suite cov
 
 ## Status
 
-Tested in Cowork: pending (June 2026). Format-validated against the Agent Skills spec.
+Tested in Cowork: 2026-06-16, passed. Format-validated against the Agent Skills spec.
 
 ## Changelog
 

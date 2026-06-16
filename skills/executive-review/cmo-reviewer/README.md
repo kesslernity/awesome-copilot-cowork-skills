@@ -33,7 +33,7 @@ This skill is the CMO seat of the executive-review category: role archetypes tha
 
 ## Status
 
-Tested in Cowork: pending (June 2026). Format-validated against the Agent Skills spec.
+Tested in Cowork: 2026-06-16, passed. Format-validated against the Agent Skills spec.
 
 ## Changelog
 
