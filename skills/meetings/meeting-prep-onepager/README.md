@@ -25,7 +25,7 @@ Demand signal: a thread on r/microsoft_365_copilot asking for exactly this kind 
 
 ## Status
 
-Tested in Cowork: pending (June 2026). Format-validated against the Agent Skills spec.
+Tested in Cowork: 2026-06-11, Frontier tenant, passed (brief produced at the named path, signal-traceability rules held). Format-validated against the Agent Skills spec.
 
 ## Changelog
 

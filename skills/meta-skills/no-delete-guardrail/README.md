@@ -28,7 +28,7 @@ The single most direct download signal we found while researching this repo: in 
 
 ## Status
 
-Tested in Cowork: pending (June 2026). Format-validated against the Agent Skills spec.
+Tested in Cowork: 2026-06-11, Frontier tenant, passed (refused unapproved overwrite and bulk delete, journalled changes). Format-validated against the Agent Skills spec.
 
 ## Changelog
 
