@@ -6,7 +6,7 @@ Answers to the questions readers ask most. Where a topic has a fuller treatment 
 
 ## Do I need a licence to use these?
 
-For Cowork, yes: a paid M365 Copilot licence plus enrolment in the [Frontier programme](https://adoption.microsoft.com/en-us/copilot/frontier-program/), since Cowork is a Frontier preview and not generally available. Quick check: if you cannot open Cowork the way Microsoft's [Use Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork) guide describes, you are not in the preview yet.
+For Cowork, yes: a paid M365 Copilot licence. Cowork has been generally available worldwide since 16 June 2026, but it is **off by default** — an admin has to enable it and grant you access. Quick check: if you cannot open Cowork the way Microsoft's [Use Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork) guide describes, it is not switched on for your account yet; ask your admin. Beyond the licence, Cowork runs add usage-based charges in Copilot Credits — see the README's [Pricing & cost (GA)](README.md#pricing--cost-ga).
 
 No Copilot licence at all? Start with [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents): 52 agents that run on the free Copilot Chat tier included with any commercial M365 licence. The other routes are in the README's [Who This Is For](README.md#who-this-is-for) section.
 
@@ -14,7 +14,7 @@ The skill files themselves are free under CC BY-SA 4.0, and they also run in Cla
 
 ## I am in the EU. Why can I not see Cowork?
 
-EU tenants are off by default in the Frontier preview. Cowork requires Anthropic enabled as a subprocessor for your tenant, and for EU tenants that is an opt-in your admin has to make, on top of Frontier programme enrolment. If your organisation has not made both moves, Cowork will not appear for you. The preview status note at the top of the [README](README.md) carries the same caveat: the documentation is prerelease and this behaviour may change.
+Cowork is **off by default everywhere**, EU included — an admin has to enable it and grant you access. It also runs on third-party models (Anthropic's Claude) under Microsoft's standard data-protection commitments, and follows the same [data residency model as the rest of Copilot](https://learn.microsoft.com/en-us/microsoft-365/enterprise/m365-dr-service-copilot). If Cowork is not appearing for you, it has not been switched on for your tenant or your account yet — that is an admin action, not a sign you are excluded.
 
 ## Are these skills safe to install? How do I audit one before trusting it?
 
@@ -24,9 +24,9 @@ To vet any skill, from this repo or anywhere else, use the checklist in the READ
 
 One thing to be clear about: these safety rules are instructions the model is asked to follow, not platform-enforced controls. Treat them as defence in depth, not a guarantee.
 
-## Why does every skill say "tenant test pending"?
+## Have these been tested in a real Cowork tenant?
 
-Because it is true. This repo was written as one batch in early June 2026, built from the demand and failure threads on r/microsoft_365_copilot. Every skill is format-validated against the Agent Skills spec, but none has yet run in a production Cowork tenant. The first tenant test is in progress, and each skill's README will gain a tested-with-date line as it passes. We would rather state the real status than imply a test that has not happened.
+Yes. This repo was written as one batch in early June 2026, built from the demand and failure threads on r/microsoft_365_copilot, and every skill is format-validated against the Agent Skills spec. All of them have since passed a live tenant test — `meeting-prep-onepager` and `no-delete-guardrail` first, on 2026-06-11, and the rest on 2026-06-16. Each skill's README carries its own tested-with-date line, because a status you cannot date is not one to trust.
 
 ## Why are there no scripts in any skill?
 

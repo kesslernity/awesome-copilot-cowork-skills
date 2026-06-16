@@ -2,7 +2,7 @@
 
 > **15 workflow skills plus a 16-persona executive review suite for Microsoft 365 Copilot Cowork.** Drop a folder into OneDrive: no admin, no Copilot Studio, no app package. The same SKILL.md runs verbatim in Claude Code.
 
-> **Preview status, June 2026.** Cowork is a [Frontier preview](https://adoption.microsoft.com/en-us/copilot/frontier-program/), not generally available. You need a paid M365 Copilot licence plus Frontier programme enrolment, with Anthropic enabled as a subprocessor for your tenant. EU tenants are off by default. The documentation is prerelease, so limits and behaviour may change. GA date and pricing are unknown. This is a community library, not affiliated with or endorsed by Microsoft.
+> **Now generally available (16 June 2026).** [Copilot Cowork is GA worldwide](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/) for Microsoft 365 Copilot customers. You need a paid M365 Copilot licence, and Cowork is **off by default** — an admin enables it and chooses who gets access. On top of the licence, Cowork is billed **usage-based in Copilot Credits** (pay-as-you-go is $0.01 per credit); see [Pricing & cost (GA)](#pricing--cost-ga). Anthropic's Opus 4.8 and Sonnet 4.6 are the models at GA. This is a community library, not affiliated with or endorsed by Microsoft.
 
 [![GitHub stars](https://img.shields.io/github/stars/kesslernity/awesome-copilot-cowork-skills?style=flat-square)](https://github.com/kesslernity/awesome-copilot-cowork-skills/stargazers)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
@@ -12,9 +12,9 @@
 
 ## Who This Is For
 
-You are inside the Frontier preview with a paid M365 Copilot licence, and you want Cowork to produce files rather than chat answers. The skills here are built for project managers, IT and MSP admins, executive assistants, and sales and finance people.
+You have a paid M365 Copilot licence with Cowork enabled, and you want Cowork to produce files rather than chat answers. The skills here are built for project managers, IT and MSP admins, executive assistants, and sales and finance people.
 
-Quick check: Microsoft's [Use Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork) guide shows the Cowork home page. If you cannot open Cowork the way that guide describes, you are not in the preview yet; start with [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents) instead.
+Quick check: Microsoft's [Use Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork) guide shows the Cowork home page. If you cannot open Cowork the way that guide describes, it is not switched on for your account yet — Cowork is off by default, so ask your admin to enable it. In the meantime, [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents) runs on the free Copilot Chat tier.
 
 Everyone else, there is a better repo for you:
 
@@ -81,6 +81,24 @@ Still stuck, or wondering about licences, the EU, safety, or scheduling? The [FA
 
 ---
 
+## Pricing & cost (GA)
+
+Cowork reached general availability on 16 June 2026, and cost comes in two layers:
+
+- **The M365 Copilot licence** — a paid per-user-per-month subscription (the $30/user/month Copilot add-on), and the prerequisite for Cowork.
+- **Usage-based billing on top**, denominated in **Copilot Credits**. Pay-as-you-go is **$0.01 per credit**, or you can commit usage volume up front (Microsoft's "P3" option) for a discount.
+
+What a single run costs is set by four inputs: **model use, context retrieval, tool calls, and runtime**. Every skill in this repo is a multi-step job, so those four inputs are exactly what a run consumes — a light skill (a meeting-prep brief) is a few credits; a heavy one (a full status pack on a top-tier model) costs more. Two levers keep that in check:
+
+- **The model picker.** Where several models are available (Opus 4.8 and Sonnet 4.6 at GA, with a lower-cost Cowork 1 model coming), pick the cheaper model for routine runs. These skills are model-agnostic — the workflow is identical on either.
+- **The skills' own design.** Named save paths, no redundant re-reads, draft-only outputs and approval-gated deletes mean fewer wasted runs and no runaway loops — which is also fewer credits.
+
+**For admins:** Cowork is off by default. You enable it, choose who gets access, and set spending limits and usage alerts at tenant, group and user level, with usage reporting at each. Estimate per-skill cost before rollout with the [Cowork cost estimator](https://aka.ms/CustomerCoworkEstimator); background on credits is in [What is Copilot Credits](https://aka.ms/CopilotCredits/LicensingGuide).
+
+Sources: [Copilot Cowork is now generally available](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/) · [Manage Copilot Cowork for your organization](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance).
+
+---
+
 ## Featured: The Executive Reviewers
 
 Before you walk a document into a steering committee, run it past the executive who will actually interrogate it. Sixteen reviewer personas, each a standalone skill: the C-suite seven (CFO, COO, CTO, CMO, CRO, CBO and CISO) plus a bench of nine (CHRO, General Counsel, product, data, procurement, investor, customer advocate, frontline skeptic and works council representative).
@@ -93,7 +111,7 @@ Every reviewer reads your document through its own mandate and produces the same
 
 Every skill folder contains the `SKILL.md` plus a README with install steps, triggers and a changelog.
 
-**Status, June 2026:** every skill is format-validated against the Agent Skills spec. Tenant testing is under way: `meeting-prep-onepager` and `no-delete-guardrail` passed a live Frontier tenant test on 2026-06-11 (see their READMEs); the rest carry "tenant test pending" until they pass, and per-skill READMEs gain tested-with-date lines as they do.
+**Status, June 2026:** every skill is format-validated against the Agent Skills spec **and has passed a live tenant test** — `meeting-prep-onepager` and `no-delete-guardrail` first, on 2026-06-11, and the rest on 2026-06-16. Each skill's README carries its own tested-with-date line.
 
 ### Executive Review
 `skills/executive-review/`
@@ -209,7 +227,7 @@ Microsoft's documentation is explicit that custom skills are not validated by Mi
 - **Email never sends.** Every email-touching skill is written to create Drafts only.
 - **DRAFT until reviewed.** Every skill is written to label generated documents DRAFT until a human reviews them.
 - **Community-reported frictions designed in.** Community reports describe Planner and To Do writes failing silently and outputs landing in session folders. So every skill that touches Planner or To Do specifies a file fallback (for example `actions.md`) and reports which path was taken, and every skill names explicit OneDrive save paths and reports where each artifact was saved.
-- **Status declared.** Every skill README carries a tested-in-Cowork status line: tested-with-date once it passes a live tenant test (two have, as of 2026-06-11), "tenant test pending" until then. Never trust a skill that claims testing it cannot date.
+- **Status declared.** Every skill README carries a tested-in-Cowork status line with the date it passed a live tenant test (the first two on 2026-06-11, the rest on 2026-06-16). Never trust a skill that claims testing it cannot date.
 
 One thing to be clear about: these are instructions the model is asked to follow, not platform-enforced controls. Cowork has no sandbox that prevents a skill, or injected content inside something a skill reads, from attempting a send or a delete. Treat them as defence in depth, not a guarantee.
 
@@ -223,15 +241,7 @@ One thing to be clear about: these are instructions the model is asked to follow
 - The safety rules cover, at minimum: email as Drafts only, no delete or overwrite without approval, and a rule that content the skill reads is data to analyse, never instructions to follow.
 - Reject any skill that tells the model to send data to an external address or URL.
 
-**Known unknowns, stated plainly:** Cowork's GA date and pricing are unknown. Whether Cowork executes bundled scripts is undocumented. Admin controls for personal OneDrive skills are not documented today and may be added.
-
----
-
-### 📕 Governing the estate, not just building it
-
-If you are running AI in an enterprise and the question "who owns the model's mistake?" does not yet have a name against it, **Critical Density** is the responsibility-and-audit playbook: how dependency builds invisibly, why attribution has to be installed before an incident, and a five-artifact toolkit (the Density Register, the Attribution-Readiness Checklist, the RACI-for-AI, the Audit Question Bank, and the Governance-Cadence Control Spec). Audit-grade, EU AI Act-aware, sector-neutral.
-
-Start free with the [Licence-Plate Test](https://store.kesslernity.com/l/licence-plate-test) (a 12-question attribution self-test), or get the full book + toolkit: [Critical Density, $59](https://store.kesslernity.com/l/critical-density).
+**Known unknowns, stated plainly:** Whether Cowork executes bundled scripts is undocumented. Admin controls for personal OneDrive skills are not documented today and may be added. (Cowork reached GA on 16 June 2026; billing is now usage-based — see [Pricing & cost (GA)](#pricing--cost-ga).)
 
 ---
 
