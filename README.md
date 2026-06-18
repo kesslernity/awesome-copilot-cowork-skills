@@ -1,6 +1,6 @@
 # Awesome Copilot Cowork Skills
 
-> **15 workflow skills plus a 16-persona executive review suite for Microsoft 365 Copilot Cowork.** Drop a folder into OneDrive: no admin, no Copilot Studio, no app package. The same SKILL.md runs verbatim in Claude Code.
+> **16 workflow skills plus a 16-persona executive review suite for Microsoft 365 Copilot Cowork.** Drop a folder into OneDrive: no admin, no Copilot Studio, no app package. The same SKILL.md runs verbatim in Claude Code.
 
 > **Now generally available (16 June 2026).** [Copilot Cowork is GA worldwide](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/) for Microsoft 365 Copilot customers. You need a paid M365 Copilot licence, and Cowork is **off by default** — an admin enables it and chooses who gets access. On top of the licence, Cowork is billed **usage-based in Copilot Credits** (pay-as-you-go is $0.01 per credit); see [Pricing & cost (GA)](#pricing--cost-ga). Anthropic's Opus 4.8 and Sonnet 4.6 are the models at GA. This is a community library, not affiliated with or endorsed by Microsoft.
 
@@ -18,7 +18,7 @@ Quick check: Microsoft's [Use Cowork](https://learn.microsoft.com/en-us/microsof
 
 Everyone else, there is a better repo for you:
 
-- **No Copilot licence?** [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents): 52 agents that run on the free Copilot Chat tier included with any commercial M365 licence.
+- **No Copilot licence?** [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents): 57 agents that run on the free Copilot Chat tier included with any commercial M365 licence.
 - **Want a governed, org-wide agent instead of a personal skill?** [awesome-copilot-studio-agents](https://github.com/kesslernity/awesome-copilot-studio-agents): 78 agents built for M365 Copilot premium in Copilot Studio.
 - **Just need prompts?** [awesome-microsoft-copilot-prompts](https://github.com/kesslernity/awesome-microsoft-copilot-prompts): single-message prompts for M365 Copilot.
 
@@ -111,7 +111,7 @@ Every reviewer reads your document through its own mandate and produces the same
 
 Every skill folder contains the `SKILL.md` plus a README with install steps, triggers and a changelog.
 
-**Status, June 2026:** every skill is format-validated against the Agent Skills spec **and has passed a live tenant test** — `meeting-prep-onepager` and `no-delete-guardrail` first, on 2026-06-11, and the rest on 2026-06-16. Each skill's README carries its own tested-with-date line.
+**Status, June 2026:** every skill is format-validated against the Agent Skills spec, and all but the newest have passed a live tenant test — `meeting-prep-onepager` and `no-delete-guardrail` first, on 2026-06-11, the rest on 2026-06-16. The `contract-review-pack` skill (added 2026-06-18) is format-validated and awaiting its first live tenant test; its README says so. Each skill's README carries its own tested-with-date line.
 
 ### Executive Review
 `skills/executive-review/`
@@ -199,6 +199,15 @@ The bench: [`chro-reviewer`](skills/executive-review/chro-reviewer/) · [`genera
 | 14 | [`no-delete-guardrail`](skills/meta-skills/no-delete-guardrail/) | Approval gates, versioned files, append-only change journal every conversation | "Clean up my project folder, but ask before removing anything" |
 | 15 | [`skills-backup-keeper`](skills/meta-skills/skills-backup-keeper/) | Dated skills-folder backups with manifest, plus append-only session journal | "Back up my skills folder before I edit anything" |
 
+### Legal & Contracts
+`skills/legal-contracts/`
+
+*Drafts and organizes only — every output is a DRAFT for a qualified lawyer to review, and law is jurisdiction-specific. Not legal advice. For a legal-lens review of a proposal or deck rather than a contract, use the [`general-counsel-reviewer`](skills/executive-review/general-counsel-reviewer/) persona above.*
+
+| # | Skill | What it produces | Example trigger |
+|---|-------|------------------|-----------------|
+| 16 | [`contract-review-pack`](skills/legal-contracts/contract-review-pack/) | DRAFT contract review pack: key-terms abstraction, deviations vs your playbook, open questions, reviewer checklist | "Review nda-acme.docx against our playbook" |
+
 ---
 
 ## Also Runs in Claude Code and VS Code
@@ -227,7 +236,7 @@ Microsoft's documentation is explicit that custom skills are not validated by Mi
 - **Email never sends.** Every email-touching skill is written to create Drafts only.
 - **DRAFT until reviewed.** Every skill is written to label generated documents DRAFT until a human reviews them.
 - **Community-reported frictions designed in.** Community reports describe Planner and To Do writes failing silently and outputs landing in session folders. So every skill that touches Planner or To Do specifies a file fallback (for example `actions.md`) and reports which path was taken, and every skill names explicit OneDrive save paths and reports where each artifact was saved.
-- **Status declared.** Every skill README carries a tested-in-Cowork status line with the date it passed a live tenant test (the first two on 2026-06-11, the rest on 2026-06-16). Never trust a skill that claims testing it cannot date.
+- **Status declared.** Every skill README carries a tested-in-Cowork status line with the date it passed a live tenant test (the first two on 2026-06-11, the rest on 2026-06-16; `contract-review-pack`, added 2026-06-18, declares it is not yet tenant-tested). Never trust a skill that claims testing it cannot date.
 
 One thing to be clear about: these are instructions the model is asked to follow, not platform-enforced controls. Cowork has no sandbox that prevents a skill, or injected content inside something a skill reads, from attempting a send or a delete. Treat them as defence in depth, not a guarantee.
 
@@ -259,7 +268,7 @@ Everything in this repo is free under the licence below. Elsewhere:
 
 ## Sibling Repos
 
-- **[awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents)**: 52 instruction-only agents for the free Copilot Chat tier, no premium licence required.
+- **[awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents)**: 57 instruction-only agents for the free Copilot Chat tier, no premium licence required.
 - **[awesome-copilot-studio-agents](https://github.com/kesslernity/awesome-copilot-studio-agents)**: 78 agents for M365 Copilot premium with SharePoint, email and calendar grounding.
 - **[awesome-microsoft-copilot-prompts](https://github.com/kesslernity/awesome-microsoft-copilot-prompts)**: single-message prompts for M365 Copilot, the place for anything chat-sized.
 

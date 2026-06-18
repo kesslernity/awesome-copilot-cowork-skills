@@ -8,7 +8,7 @@ Answers to the questions readers ask most. Where a topic has a fuller treatment 
 
 For Cowork, yes: a paid M365 Copilot licence. Cowork has been generally available worldwide since 16 June 2026, but it is **off by default** — an admin has to enable it and grant you access. Quick check: if you cannot open Cowork the way Microsoft's [Use Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork) guide describes, it is not switched on for your account yet; ask your admin. Beyond the licence, Cowork runs add usage-based charges in Copilot Credits — see the README's [Pricing & cost (GA)](README.md#pricing--cost-ga).
 
-No Copilot licence at all? Start with [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents): 52 agents that run on the free Copilot Chat tier included with any commercial M365 licence. The other routes are in the README's [Who This Is For](README.md#who-this-is-for) section.
+No Copilot licence at all? Start with [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents): 57 agents that run on the free Copilot Chat tier included with any commercial M365 licence. The other routes are in the README's [Who This Is For](README.md#who-this-is-for) section.
 
 The skill files themselves are free under CC BY-SA 4.0, and they also run in Claude Code and VS Code (see below), so a Cowork licence is only required for the Cowork runtime.
 
