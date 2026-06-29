@@ -311,11 +311,22 @@ Everything in this repo is free under the licence below. Elsewhere:
 
 ---
 
-## Sibling Repos
+## More from Kesslernity
 
-- **[awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents)**: 57 instruction-only agents for the free Copilot Chat tier, no premium licence required.
-- **[awesome-copilot-studio-agents](https://github.com/kesslernity/awesome-copilot-studio-agents)**: 78 agents for M365 Copilot premium with SharePoint, email and calendar grounding.
-- **[awesome-microsoft-copilot-prompts](https://github.com/kesslernity/awesome-microsoft-copilot-prompts)**: single-message prompts for M365 Copilot, the place for anything chat-sized.
+This repo is free and stays free. If it's useful, here's the rest of the toolkit.
+
+**Free**
+- 📄 **Copilot on One Page** — the one-page cheat sheet for getting real answers out of Copilot. [Free download](https://store.kesslernity.com/l/copilot-on-one-page)
+
+**The rest of the free Copilot repos**
+- [awesome-microsoft-copilot-prompts](https://github.com/kesslernity/awesome-microsoft-copilot-prompts) — 400+ tested Copilot prompts
+- [awesome-copilot-studio-agents](https://github.com/kesslernity/awesome-copilot-studio-agents) — ready-to-deploy Copilot Studio agents
+- [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents) — Copilot Chat agents, no premium licence needed
+
+**Deploying Copilot for a team?**
+- 🛒 Deployment kits, governance playbooks, and the honest "when not to use it" guides, built so you can deploy Copilot without a consultant: **[kesslernity.com/store](https://kesslernity.com/store)**
+
+Independent and vendor-neutral. Not affiliated with Microsoft.
 
 ---
 
