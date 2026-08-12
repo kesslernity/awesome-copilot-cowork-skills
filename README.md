@@ -350,4 +350,4 @@ You are free to use, adapt and redistribute these skills, including commercially
 
 ---
 
-*Built by [Mathieu Kessler](https://linkedin.com/in/mathieukessler) · [NerdyChefs.ai](https://nerdychefs.ai) · [kesslernity.com](https://www.kesslernity.com/?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=byline)*
+*Built by [Mathieu Kessler](https://linkedin.com/in/mathieukessler) · [kesslernity.com](https://www.kesslernity.com/?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=byline)*
