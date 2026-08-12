@@ -18,8 +18,8 @@ Quick check: Microsoft's [Use Cowork](https://learn.microsoft.com/en-us/microsof
 
 Everyone else, there is a better repo for you:
 
-- **No Copilot licence?** [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents): 57 agents that run on the free Copilot Chat tier included with any commercial M365 licence.
-- **Want a governed, org-wide agent instead of a personal skill?** [awesome-copilot-studio-agents](https://github.com/kesslernity/awesome-copilot-studio-agents): 78 agents built for M365 Copilot premium in Copilot Studio.
+- **No Copilot licence?** [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents): 82 agents that run on the free Copilot Chat tier included with any commercial M365 licence.
+- **Want a governed, org-wide agent instead of a personal skill?** [awesome-copilot-studio-agents](https://github.com/kesslernity/awesome-copilot-studio-agents): 103 agents built for M365 Copilot premium in Copilot Studio.
 - **Just need prompts?** [awesome-microsoft-copilot-prompts](https://github.com/kesslernity/awesome-microsoft-copilot-prompts): single-message prompts for M365 Copilot.
 
 ---
