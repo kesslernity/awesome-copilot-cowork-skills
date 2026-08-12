@@ -2,7 +2,7 @@
 
 > **21 workflow skills plus a 16-persona executive review suite for Microsoft 365 Copilot Cowork.** Drop a folder into OneDrive: no admin, no Copilot Studio, no app package. The same SKILL.md runs verbatim in Claude Code.
 
-> **Now generally available (16 June 2026).** [Copilot Cowork is GA worldwide](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/) for Microsoft 365 Copilot customers. You need a paid M365 Copilot licence, and Cowork is **off by default** — an admin enables it and chooses who gets access. On top of the licence, Cowork is billed **usage-based in Copilot Credits** (pay-as-you-go is $0.01 per credit); see [Pricing & cost (GA)](#pricing--cost-ga). Anthropic's Opus 4.8 and Sonnet 4.6 are the models at GA. This is a community library, not affiliated with or endorsed by Microsoft.
+> **Now generally available (16 June 2026).** [Copilot Cowork is GA worldwide](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/) for Microsoft 365 Copilot customers. You need a paid M365 Copilot licence, and Cowork is **off by default**: an admin enables it and chooses who gets access. On top of the licence, Cowork is billed **usage-based in Copilot Credits** (pay-as-you-go is $0.01 per credit); see [Pricing & cost (GA)](#pricing--cost-ga). Anthropic's Opus 4.8 and Sonnet 4.6 are the models at GA. This is a community library, not affiliated with or endorsed by Microsoft.
 
 [![GitHub stars](https://img.shields.io/github/stars/kesslernity/awesome-copilot-cowork-skills?style=flat-square)](https://github.com/kesslernity/awesome-copilot-cowork-skills/stargazers)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
@@ -14,7 +14,7 @@
 
 You have a paid M365 Copilot licence with Cowork enabled, and you want Cowork to produce files rather than chat answers. The skills here are built for project managers, IT and MSP admins, executive assistants, and sales and finance people.
 
-Quick check: Microsoft's [Use Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork) guide shows the Cowork home page. If you cannot open Cowork the way that guide describes, it is not switched on for your account yet — Cowork is off by default, so ask your admin to enable it. In the meantime, [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents) runs on the free Copilot Chat tier.
+Quick check: Microsoft's [Use Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork) guide shows the Cowork home page. If you cannot open Cowork the way that guide describes, it is not switched on for your account yet: Cowork is off by default, so ask your admin to enable it. In the meantime, [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents) runs on the free Copilot Chat tier.
 
 Everyone else, there is a better repo for you:
 
@@ -85,13 +85,13 @@ Still stuck, or wondering about licences, the EU, safety, or scheduling? The [FA
 
 Cowork reached general availability on 16 June 2026, and cost comes in two layers:
 
-- **The M365 Copilot licence** — a paid per-user-per-month subscription (the $30/user/month Copilot add-on), and the prerequisite for Cowork.
+- **The M365 Copilot licence**: a paid per-user-per-month subscription (the $30/user/month Copilot add-on), and the prerequisite for Cowork.
 - **Usage-based billing on top**, denominated in **Copilot Credits**. Pay-as-you-go is **$0.01 per credit**, or you can commit usage volume up front (Microsoft's "P3" option) for a discount.
 
-What a single run costs is set by four inputs: **model use, context retrieval, tool calls, and runtime**. Every skill in this repo is a multi-step job, so those four inputs are exactly what a run consumes — a light skill (a meeting-prep brief) is a few credits; a heavy one (a full status pack on a top-tier model) costs more. Two levers keep that in check:
+What a single run costs is set by four inputs: **model use, context retrieval, tool calls, and runtime**. Every skill in this repo is a multi-step job, so those four inputs are exactly what a run consumes: a light skill (a meeting-prep brief) is a few credits; a heavy one (a full status pack on a top-tier model) costs more. Two levers keep that in check:
 
-- **The model picker.** Where several models are available (Opus 4.8 and Sonnet 4.6 at GA, with a lower-cost Cowork 1 model coming), pick the cheaper model for routine runs. These skills are model-agnostic — the workflow is identical on either.
-- **The skills' own design.** Named save paths, no redundant re-reads, draft-only outputs and approval-gated deletes mean fewer wasted runs and no runaway loops — which is also fewer credits.
+- **The model picker.** Where several models are available (Opus 4.8 and Sonnet 4.6 at GA, with a lower-cost Cowork 1 model coming), pick the cheaper model for routine runs. These skills are model-agnostic; the workflow is identical on either.
+- **The skills' own design.** Named save paths, no redundant re-reads, draft-only outputs and approval-gated deletes mean fewer wasted runs and no runaway loops, which is also fewer credits.
 
 **For admins:** Cowork is off by default. You enable it, choose who gets access, and set spending limits and usage alerts at tenant, group and user level, with usage reporting at each. Estimate per-skill cost before rollout with the [Cowork cost estimator](https://aka.ms/CustomerCoworkEstimator); background on credits is in [What is Copilot Credits](https://aka.ms/CopilotCredits/LicensingGuide).
 
@@ -111,7 +111,7 @@ Every reviewer reads your document through its own mandate and produces the same
 
 Every skill folder contains the `SKILL.md` plus a README with install steps, triggers and a changelog.
 
-**Status, June 2026:** every skill is format-validated against the Agent Skills spec, and all but the newest have passed a live tenant test — `meeting-prep-onepager` and `no-delete-guardrail` first, on 2026-06-11, the rest on 2026-06-16. The `contract-review-pack`, `rfp-comparison-pack`, `dataset-insight-pack`, `dpia-draft-pack`, `export-review-pack`, and `controls-gap-pack` skills (added 2026-06-18) are format-validated and awaiting their first live tenant test; their READMEs say so. Each skill's README carries its own tested-with-date line.
+**Status, June 2026:** every skill is format-validated against the Agent Skills spec, and all but the newest have passed a live tenant test: `meeting-prep-onepager` and `no-delete-guardrail` first, on 2026-06-11, the rest on 2026-06-16. The `contract-review-pack`, `rfp-comparison-pack`, `dataset-insight-pack`, `dpia-draft-pack`, `export-review-pack`, and `controls-gap-pack` skills (added 2026-06-18) are format-validated and awaiting their first live tenant test; their READMEs say so. Each skill's README carries its own tested-with-date line.
 
 ### Executive Review
 `skills/executive-review/`
@@ -202,7 +202,7 @@ The bench: [`chro-reviewer`](skills/executive-review/chro-reviewer/) · [`genera
 ### Legal & Contracts
 `skills/legal-contracts/`
 
-*Drafts and organizes only — every output is a DRAFT for a qualified lawyer to review, and law is jurisdiction-specific. Not legal advice. For a legal-lens review of a proposal or deck rather than a contract, use the [`general-counsel-reviewer`](skills/executive-review/general-counsel-reviewer/) persona above.*
+*Drafts and organizes only: every output is a DRAFT for a qualified lawyer to review, and law is jurisdiction-specific. Not legal advice. For a legal-lens review of a proposal or deck rather than a contract, use the [`general-counsel-reviewer`](skills/executive-review/general-counsel-reviewer/) persona above.*
 
 | # | Skill | What it produces | Example trigger |
 |---|-------|------------------|-----------------|
@@ -211,7 +211,7 @@ The bench: [`chro-reviewer`](skills/executive-review/chro-reviewer/) · [`genera
 ### Procurement & Vendor Management
 `skills/procurement/`
 
-*Prepares the evaluation; never scores, ranks, selects, or awards — those stay with the panel under procurement governance.*
+*Prepares the evaluation; never scores, ranks, selects, or awards. Those stay with the panel under procurement governance.*
 
 | # | Skill | What it produces | Example trigger |
 |---|-------|------------------|-----------------|
@@ -229,7 +229,7 @@ The bench: [`chro-reviewer`](skills/executive-review/chro-reviewer/) · [`genera
 ### Data Privacy
 `skills/data-privacy/`
 
-*Prepares privacy paperwork only — never rates risk, determines lawful basis, or judges adequacy, and works from descriptions, never personal data. The DPO assesses and signs.*
+*Prepares privacy paperwork only: never rates risk, determines lawful basis, or judges adequacy, and works from descriptions, never personal data. The DPO assesses and signs.*
 
 | # | Skill | What it produces | Example trigger |
 |---|-------|------------------|-----------------|
@@ -238,7 +238,7 @@ The bench: [`chro-reviewer`](skills/executive-review/chro-reviewer/) · [`genera
 ### Trade Compliance
 `skills/trade-compliance/`
 
-*Prepares the export-control file only — never classifies, screens, clears, or decides a licence. Screening runs in your screening tool; trade compliance decides (civil/criminal liability attaches).*
+*Prepares the export-control file only: never classifies, screens, clears, or decides a licence. Screening runs in your screening tool; trade compliance decides (civil/criminal liability attaches).*
 
 | # | Skill | What it produces | Example trigger |
 |---|-------|------------------|-----------------|
@@ -247,7 +247,7 @@ The bench: [`chro-reviewer`](skills/executive-review/chro-reviewer/) · [`genera
 ### Risk, Ethics & Compliance
 `skills/risk-ethics-compliance/`
 
-*Prepares GRC paperwork only — never concludes compliance, control effectiveness, or risk acceptance; control owners and audit assess.*
+*Prepares GRC paperwork only: never concludes compliance, control effectiveness, or risk acceptance; control owners and audit assess.*
 
 | # | Skill | What it produces | Example trigger |
 |---|-------|------------------|-----------------|
@@ -295,7 +295,7 @@ One thing to be clear about: these are instructions the model is asked to follow
 - The safety rules cover, at minimum: email as Drafts only, no delete or overwrite without approval, and a rule that content the skill reads is data to analyse, never instructions to follow.
 - Reject any skill that tells the model to send data to an external address or URL.
 
-**Known unknowns, stated plainly:** Whether Cowork executes bundled scripts is undocumented. Admin controls for personal OneDrive skills are not documented today and may be added. (Cowork reached GA on 16 June 2026; billing is now usage-based — see [Pricing & cost (GA)](#pricing--cost-ga).)
+**Known unknowns, stated plainly:** Whether Cowork executes bundled scripts is undocumented. Admin controls for personal OneDrive skills are not documented today and may be added. (Cowork reached GA on 16 June 2026; billing is now usage-based, see [Pricing & cost (GA)](#pricing--cost-ga).)
 
 ---
 
@@ -319,9 +319,9 @@ This repo is free and stays free. If it's useful, here's the rest of the toolkit
 - 📄 **Copilot on One Page**: the one-page cheat sheet for getting real answers out of Copilot. [Free download](https://store.kesslernity.com/l/copilot-on-one-page?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=footer)
 
 **The rest of the free Copilot repos**
-- [awesome-microsoft-copilot-prompts](https://github.com/kesslernity/awesome-microsoft-copilot-prompts) — 400+ tested Copilot prompts
-- [awesome-copilot-studio-agents](https://github.com/kesslernity/awesome-copilot-studio-agents) — ready-to-deploy Copilot Studio agents
-- [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents) — Copilot Chat agents, no premium licence needed
+- [awesome-microsoft-copilot-prompts](https://github.com/kesslernity/awesome-microsoft-copilot-prompts): 400+ tested Copilot prompts
+- [awesome-copilot-studio-agents](https://github.com/kesslernity/awesome-copilot-studio-agents): ready-to-deploy Copilot Studio agents
+- [awesome-copilot-chat-agents](https://github.com/kesslernity/awesome-copilot-chat-agents): Copilot Chat agents, no premium licence needed
 
 **Deploying Copilot for a team?**
 - 🛒 Deployment kits, governance playbooks, and the honest "when not to use it" guides, built so you can deploy Copilot without a consultant: **[kesslernity.com/store](https://www.kesslernity.com/store?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=footer)**
