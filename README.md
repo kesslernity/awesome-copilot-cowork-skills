@@ -8,6 +8,8 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Format: Agent Skills open standard](https://img.shields.io/badge/format-Agent%20Skills%20open%20standard-blue.svg)](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-plugin-development)
 
+**Start here, free:** [Copilot on One Page](https://store.kesslernity.com/l/copilot-on-one-page?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=hero) is the four-step loop these skills sit on top of. One page, printable.
+
 ---
 
 ## Who This Is For
@@ -252,6 +254,13 @@ The bench: [`chro-reviewer`](skills/executive-review/chro-reviewer/) · [`genera
 | # | Skill | What it produces | Example trigger |
 |---|-------|------------------|-----------------|
 | 21 | [`controls-gap-pack`](skills/risk-ethics-compliance/controls-gap-pack/) | DRAFT controls & gap pack: obligations, mapped controls, apparent coverage, gaps, actions to assess | "Map this regulation to our controls and find the gaps" |
+
+### If you are introducing this to a team
+
+A skill that saves you ten minutes saves a team nothing until people trust the output enough to
+skip re-checking it. That trust is a rollout problem, not a prompting problem.
+
+[The M365 Copilot Deployment Kit](https://store.kesslernity.com/l/kpfpi?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=deploy_block_a) covers the rollout. $97, one-time.
 
 ---
 
