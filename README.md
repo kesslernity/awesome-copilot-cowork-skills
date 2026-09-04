@@ -8,7 +8,7 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Format: Agent Skills open standard](https://img.shields.io/badge/format-Agent%20Skills%20open%20standard-blue.svg)](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-plugin-development)
 
-**Start here, free:** [Copilot on One Page](https://store.kesslernity.com/l/copilot-on-one-page?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=hero) is the four-step loop these skills sit on top of. One page, printable.
+**Start here, free:** [Copilot on One Page](https://www.kesslernity.com/copilot-on-one-page?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=hero) is the four-step loop these skills sit on top of. One page, printable.
 
 ---
 
@@ -325,7 +325,7 @@ Everything in this repo is free under the licence below. Elsewhere:
 This repo is free and stays free. If it's useful, here's the rest of the toolkit.
 
 **Free**
-- 📄 **Copilot on One Page**: the one-page cheat sheet for getting real answers out of Copilot. [Free download](https://store.kesslernity.com/l/copilot-on-one-page?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=footer)
+- 📄 **Copilot on One Page**: the one-page cheat sheet for getting real answers out of Copilot. [Free download](https://www.kesslernity.com/copilot-on-one-page?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=footer)
 - 📺 **YouTube**: Copilot walkthroughs, agent builds, and what actually changed in the roadmap this month. [@Kesslernity](https://www.youtube.com/@Kesslernity?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=footer)
 
 **The rest of the free Copilot repos**
