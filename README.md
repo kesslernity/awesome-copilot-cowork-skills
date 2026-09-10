@@ -260,7 +260,7 @@ The bench: [`chro-reviewer`](skills/executive-review/chro-reviewer/) · [`genera
 A skill that saves you ten minutes saves a team nothing until people trust the output enough to
 skip re-checking it. That trust is a rollout problem, not a prompting problem.
 
-[The M365 Copilot Deployment Kit](https://store.kesslernity.com/l/kpfpi?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=deploy_block_a) covers the rollout. $97, one-time.
+[The M365 Copilot Deployment Kit](https://store.kesslernity.com/l/kpfpi?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=deploy_block_a) covers the rollout. $97, one-time. If you also need the cost model and the user-facing guide, [the Copilot Rollout Bundle](https://store.kesslernity.com/l/copilot-rollout-bundle?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=rollout_bundle) has the Kit, The Real Cost of Copilot and the Honest Kit together for $134 instead of $165.
 
 ---
 
@@ -326,6 +326,7 @@ This repo is free and stays free. If it's useful, here's the rest of the toolkit
 
 **Free**
 - 📄 **Copilot on One Page**: the one-page cheat sheet for getting real answers out of Copilot. [Free download](https://www.kesslernity.com/copilot-on-one-page?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=footer)
+- ✅ **Day-0 Readiness Gate**: eight pass-or-fail checks to settle before the first Copilot licence goes out. [Free download](https://www.kesslernity.com/copilot-day0-readiness?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=day0)
 - 📺 **YouTube**: Copilot walkthroughs, agent builds, and what actually changed in the roadmap this month. [@Kesslernity](https://www.youtube.com/@Kesslernity?utm_source=github&utm_medium=readme&utm_campaign=cowork_repo&utm_content=footer)
 
 **The rest of the free Copilot repos**
