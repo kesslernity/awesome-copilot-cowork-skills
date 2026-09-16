@@ -1,7 +1,11 @@
 ---
 name: dataset-insight-pack
-description: Reads a spreadsheet dataset and a question, then produces a DRAFT insight pack — a data profile, observations cited to the data (as leads, not conclusions), caveats, and suggested charts and next analyses. Never the source of truth: every figure must be verified, and correlation is never stated as causation. Use when the user asks to explore, profile or find insights in a dataset or spreadsheet.
-
+description: >-
+  Reads a spreadsheet dataset and a question, then produces a DRAFT insight pack: a data profile,
+  observations cited to the data (as leads, not conclusions), caveats, and suggested charts and
+  next analyses. Never the source of truth: every figure must be verified, and correlation is
+  never stated as causation. Use when the user asks to explore, profile or find insights in a
+  dataset or spreadsheet.
 ---
 
 ## PURPOSE

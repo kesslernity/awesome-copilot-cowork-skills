@@ -60,6 +60,10 @@ If it fits in one chat message, it is a prompt, and it belongs in [awesome-micro
 
 ---
 
+## Works in declarative agents too
+
+Microsoft 365 Copilot declarative agents can now carry custom skills (preview, Frontier tenants) in the same folder-plus-`SKILL.md` shape. Agent-ready rewrites of every skill here, plus a hundred more across finance, HR, procurement, sales, legal, IT, security and engineering, live in the sibling repository [awesome-copilot-agent-skills](https://github.com/kesslernity/awesome-copilot-agent-skills): capability-neutral versions, one upload zip per skill, packs of eight with agent instructions, and a checker that catches the strict-YAML front matter rule before Agent Builder does. One thing to know if you upload a Cowork skill to an agent: Agent Builder parses the front matter as strict YAML, so a description written as a plain line with a colon followed by a space fails; quote it or use a folded block (`description: >-`).
+
 ## Install in 60 Seconds
 
 Sixty seconds per skill, once you have the repo downloaded:
