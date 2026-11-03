@@ -1,0 +1,4 @@
+.claude-flow/
+.swarm/
+ruvector.db
+.DS_Store

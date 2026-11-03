@@ -68,22 +68,42 @@ Microsoft 365 Copilot declarative agents can now carry custom skills (preview, F
 
 Copilot in Excel and Copilot in PowerPoint both take custom skills in the same folder-plus-`SKILL.md` shape: upload them in the Copilot pane, drop them in your OneDrive Skills folder, or have an admin deploy them to the organisation. Those are different surfaces from Cowork, with their own install paths and no Cowork folder. Twenty four app-native skills, twelve for each app, live in the sibling repository [awesome-copilot-office-skills](https://github.com/kesslernity/awesome-copilot-office-skills). For a branded deck built end to end in Cowork, `branded-deck-builder` below remains the Cowork version; for checking an existing deck against written brand rules inside PowerPoint, use `brand-rules-check` there.
 
-## Install in 60 Seconds
+## Install a Skill
 
-Sixty seconds per skill, once you have the repo downloaded:
+**Two things to check first.** Cowork has to be switched on for you by an admin, and it is off by default. And custom skills do not work on a phone or tablet: Microsoft's wording is "Custom skills aren't supported in Cowork on mobile platforms", so this needs a laptop or desktop whichever route you take.
 
-0. Get the files. On the repo page, click **Code**, then **Download ZIP**. Extract it anywhere outside OneDrive; you will copy individual skill folders from the extracted copy. (Developers can `git clone` instead, also outside OneDrive.)
-1. In OneDrive, open `/Documents/Cowork/`. If it does not exist yet, create it yourself; Microsoft's [own instructions](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork#create-custom-skills) say to create the folder if it is missing. Inside it, create a lowercase `skills` folder.
+### Upload the zip
+
+Every skill in the directory below has a **Download** link. Hand that file to Cowork and Microsoft does the rest, including writing it to your OneDrive. You never create a folder, and if something is wrong with the file Cowork says so instead of failing silently.
+
+1. Download a skill's zip from the [Skill Directory](#skill-directory) below.
+2. In Cowork, open **Customize**.
+3. Select the **Skills** tab.
+4. Select the arrow next to **Add**, then **Upload skill**.
+5. Choose the zip you just downloaded.
+6. Wait a moment for it to sync. Cowork validates the file and the skill appears under **Your skills**.
+7. Start a **new** conversation and use one of the example triggers from the skill's README.
+
+This is Microsoft's own route, documented in [Customize Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-customize). Cowork accepts an archive "that has a SKILL.md at its root, plus any companion files the skill uses", which is exactly how each zip here is built. New to Cowork itself? [Use Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork) shows where the home page lives and how conversations work.
+
+### Or copy folders into OneDrive
+
+Worth it when you are installing several skills in one go, since you can drag them all across at once. It is the longer route and the one where mistakes are silent.
+
+0. On the repo page, select **Code**, then **Download ZIP**. Extract it anywhere outside OneDrive. (Developers can `git clone` instead, also outside OneDrive.)
+1. In OneDrive, open `/Documents/Cowork/`. If it does not exist, create it; Microsoft's [instructions](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork#create-custom-skills) say to create the folder if it is missing. Inside it, create a lowercase `skills` folder.
 2. Copy a skill folder from the extracted repo (the whole folder, including its `references/` subfolder where present) into `/Documents/Cowork/skills/`. Keep the folder name exactly as shipped: it must match the `name` field inside.
-3. Start a **new** Cowork conversation and use one of the example triggers from the skill's README. New to Cowork itself? Microsoft's [Use Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork) guide shows where the Cowork home page lives and how conversations work.
+3. Start a **new** Cowork conversation and use one of the example triggers.
 
-Do this from a desktop: either drag the extracted skill folder into OneDrive in the browser, or copy it into your synced OneDrive folder in Explorer or Finder. The OneDrive mobile app cannot upload folders, so come back on a desktop if you are reading this on your phone.
+Do this from a desktop: either drag the extracted skill folder into OneDrive in the browser, or copy it into your synced OneDrive folder in Explorer or Finder.
 
-Three community-reported gotchas:
+Three gotchas that only bite on this route:
 
 - The `skills` folder name is lowercase and case-sensitive. `Skills` will not be found.
-- Discovery happens at the **start** of a conversation. A conversation that is already open will not see a skill you just added; start a new one.
+- Copy the skill folder itself, not the category folder above it and not the loose files inside it.
 - Copy folders into OneDrive rather than working with git there. A `.git` directory inside an actively syncing OneDrive folder can cause sync conflicts and partial-state corruption; keep your clone or extracted copy elsewhere and copy folders across. (The tenant-side wipe incidents of May and June 2026 are a separate problem, documented with a source in [`skills-backup-keeper`](skills/meta-skills/skills-backup-keeper/), which exists for exactly that reason.)
+
+One gotcha applies to **both** routes: discovery happens at the **start** of a conversation. A conversation that is already open will not see a skill you just added, so start a new one.
 
 Still stuck, or wondering about licences, the EU, safety, or scheduling? The [FAQ](FAQ.md) answers the questions readers actually ask.
 
@@ -128,140 +148,140 @@ Every skill folder contains the `SKILL.md` plus a README with install steps, tri
 
 **The 16 reviewer personas.** Every reviewer produces the same artifact through its own lens: a DRAFT review .docx with a verdict, cited findings, risks and five interrogation questions. Each runs standalone.
 
-The C-suite seven: [`cfo-reviewer`](skills/executive-review/cfo-reviewer/) · [`coo-reviewer`](skills/executive-review/coo-reviewer/) · [`cto-reviewer`](skills/executive-review/cto-reviewer/) · [`cmo-reviewer`](skills/executive-review/cmo-reviewer/) · [`cro-reviewer`](skills/executive-review/cro-reviewer/) · [`cbo-reviewer`](skills/executive-review/cbo-reviewer/) · [`ciso-reviewer`](skills/executive-review/ciso-reviewer/)
+The C-suite seven: [`cfo-reviewer`](skills/executive-review/cfo-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/cfo-reviewer.zip) · [`coo-reviewer`](skills/executive-review/coo-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/coo-reviewer.zip) · [`cto-reviewer`](skills/executive-review/cto-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/cto-reviewer.zip) · [`cmo-reviewer`](skills/executive-review/cmo-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/cmo-reviewer.zip) · [`cro-reviewer`](skills/executive-review/cro-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/cro-reviewer.zip) · [`cbo-reviewer`](skills/executive-review/cbo-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/cbo-reviewer.zip) · [`ciso-reviewer`](skills/executive-review/ciso-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/ciso-reviewer.zip)
 
-The bench: [`chro-reviewer`](skills/executive-review/chro-reviewer/) · [`general-counsel-reviewer`](skills/executive-review/general-counsel-reviewer/) · [`cpo-reviewer`](skills/executive-review/cpo-reviewer/) · [`cdo-reviewer`](skills/executive-review/cdo-reviewer/) · [`procurement-reviewer`](skills/executive-review/procurement-reviewer/) · [`investor-reviewer`](skills/executive-review/investor-reviewer/) · [`customer-advocate-reviewer`](skills/executive-review/customer-advocate-reviewer/) · [`frontline-skeptic-reviewer`](skills/executive-review/frontline-skeptic-reviewer/) · [`works-council-reviewer`](skills/executive-review/works-council-reviewer/)
+The bench: [`chro-reviewer`](skills/executive-review/chro-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/chro-reviewer.zip) · [`general-counsel-reviewer`](skills/executive-review/general-counsel-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/general-counsel-reviewer.zip) · [`cpo-reviewer`](skills/executive-review/cpo-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/cpo-reviewer.zip) · [`cdo-reviewer`](skills/executive-review/cdo-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/cdo-reviewer.zip) · [`procurement-reviewer`](skills/executive-review/procurement-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/procurement-reviewer.zip) · [`investor-reviewer`](skills/executive-review/investor-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/investor-reviewer.zip) · [`customer-advocate-reviewer`](skills/executive-review/customer-advocate-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/customer-advocate-reviewer.zip) · [`frontline-skeptic-reviewer`](skills/executive-review/frontline-skeptic-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/frontline-skeptic-reviewer.zip) · [`works-council-reviewer`](skills/executive-review/works-council-reviewer/) [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/works-council-reviewer.zip)
 
 ### Meetings
 `skills/meetings/`
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 1 | [`meeting-prep-onepager`](skills/meetings/meeting-prep-onepager/) | One-page Word prep brief for any upcoming meeting | "Prep me for my next meeting" |
-| 2 | [`transcript-to-actions`](skills/meetings/transcript-to-actions/) | Action-items file, confirmed To Do or Planner tasks, DRAFT owner emails | "Turn this transcript into action items and follow-up emails" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 1 | [`meeting-prep-onepager`](skills/meetings/meeting-prep-onepager/) | One-page Word prep brief for any upcoming meeting | "Prep me for my next meeting" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/meeting-prep-onepager.zip) |
+| 2 | [`transcript-to-actions`](skills/meetings/transcript-to-actions/) | Action-items file, confirmed To Do or Planner tasks, DRAFT owner emails | "Turn this transcript into action items and follow-up emails" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/transcript-to-actions.zip) |
 
 ### Project Management
 `skills/project-management/`
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 3 | [`project-status-tracker`](skills/project-management/project-status-tracker/) | Four living project files plus a weekly status-YYYY-WW.docx draft | "Produce this week's status report for helios-migration" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 3 | [`project-status-tracker`](skills/project-management/project-status-tracker/) | Four living project files plus a weekly status-YYYY-WW.docx draft | "Produce this week's status report for helios-migration" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/project-status-tracker.zip) |
 
 ### Daily Briefings
 `skills/daily-briefings/`
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 4 | [`custom-daily-brief`](skills/daily-briefings/custom-daily-brief/) | Role-tuned morning brief DOCX: emails, calendar, Teams mentions, deadlines | "Run my daily brief" |
-| 5 | [`commitment-catcher`](skills/daily-briefings/commitment-catcher/) | Commitments ledger (made and owed, overdue flagged) plus To Do entries | "What did I promise people in the last 24 hours?" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 4 | [`custom-daily-brief`](skills/daily-briefings/custom-daily-brief/) | Role-tuned morning brief DOCX: emails, calendar, Teams mentions, deadlines | "Run my daily brief" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/custom-daily-brief.zip) |
+| 5 | [`commitment-catcher`](skills/daily-briefings/commitment-catcher/) | Commitments ledger (made and owed, overdue flagged) plus To Do entries | "What did I promise people in the last 24 hours?" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/commitment-catcher.zip) |
 
 ### Email & Inbox
 `skills/email-inbox/`
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 6 | [`inbox-triage`](skills/email-inbox/inbox-triage/) | Dated triage report, five-bucket inbox sort, labelled reply drafts | "Triage my inbox and draft what needs a reply" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 6 | [`inbox-triage`](skills/email-inbox/inbox-triage/) | Dated triage report, five-bucket inbox sort, labelled reply drafts | "Triage my inbox and draft what needs a reply" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/inbox-triage.zip) |
 
 ### Writing & Communication
 `skills/writing-communication/`
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 7 | [`write-like-me`](skills/writing-communication/write-like-me/) | Voice profile file plus email and docx drafts in your voice | "Draft this email in my voice" |
-| 8 | [`branded-deck-builder`](skills/writing-communication/branded-deck-builder/) | Brand-compliant .pptx deck on your template, plus outline and compliance report | "Build a 12-slide deck on our company template" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 7 | [`write-like-me`](skills/writing-communication/write-like-me/) | Voice profile file plus email and docx drafts in your voice | "Draft this email in my voice" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/write-like-me.zip) |
+| 8 | [`branded-deck-builder`](skills/writing-communication/branded-deck-builder/) | Brand-compliant .pptx deck on your template, plus outline and compliance report | "Build a 12-slide deck on our company template" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/branded-deck-builder.zip) |
 
 ### Reporting & Analysis
 `skills/reporting-analysis/`
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 9 | [`report-attachment-analyzer`](skills/reporting-analysis/report-attachment-analyzer/) | Trend spreadsheet plus DRAFT delta summary from recurring emailed reports | "Update the trends for the weekly sales report" |
-| 10 | [`news-monitor-digest`](skills/reporting-analysis/news-monitor-digest/) | Dated 5-8 item news digest as Word doc or email draft | "Sweep my news sources and build today's digest" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 9 | [`report-attachment-analyzer`](skills/reporting-analysis/report-attachment-analyzer/) | Trend spreadsheet plus DRAFT delta summary from recurring emailed reports | "Update the trends for the weekly sales report" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/report-attachment-analyzer.zip) |
+| 10 | [`news-monitor-digest`](skills/reporting-analysis/news-monitor-digest/) | Dated 5-8 item news digest as Word doc or email draft | "Sweep my news sources and build today's digest" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/news-monitor-digest.zip) |
 
 > **Data boundary note for admins:** `news-monitor-digest` reaches outside the tenant by design. It fetches external web content through the Deep Research built-in on every run, and its safety rules treat all fetched web content as untrusted data. No other skill in this library reads anything outside the tenant.
 
 ### IT Operations
 `skills/it-operations/`
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 11 | [`sharepoint-review-sweeper`](skills/it-operations/sharepoint-review-sweeper/) | Overdue-review spreadsheet plus per-owner reminder email Drafts, never sent | "Which documents in our library are past their review date?" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 11 | [`sharepoint-review-sweeper`](skills/it-operations/sharepoint-review-sweeper/) | Overdue-review spreadsheet plus per-owner reminder email Drafts, never sent | "Which documents in our library are past their review date?" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/sharepoint-review-sweeper.zip) |
 
 ### Dashboards & Microapps
 `skills/dashboards-microapps/`
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 12 | [`project-dashboard-builder`](skills/dashboards-microapps/project-dashboard-builder/) | Single-file offline HTML dashboard from project tracker files | "Build a dashboard for the website-relaunch project" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 12 | [`project-dashboard-builder`](skills/dashboards-microapps/project-dashboard-builder/) | Single-file offline HTML dashboard from project tracker files | "Build a dashboard for the website-relaunch project" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/project-dashboard-builder.zip) |
 
 ### Sales & BD
 `skills/sales-bd/`
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 13 | [`estimate-to-sow`](skills/sales-bd/estimate-to-sow/) | DRAFT statement-of-work .docx from your estimate spreadsheet, maths validated first | "Turn estimate-acme-q3.xlsx into a statement of work" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 13 | [`estimate-to-sow`](skills/sales-bd/estimate-to-sow/) | DRAFT statement-of-work .docx from your estimate spreadsheet, maths validated first | "Turn estimate-acme-q3.xlsx into a statement of work" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/estimate-to-sow.zip) |
 
 ### Meta-Skills
 `skills/meta-skills/`
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 14 | [`no-delete-guardrail`](skills/meta-skills/no-delete-guardrail/) | Approval gates, versioned files, append-only change journal every conversation | "Clean up my project folder, but ask before removing anything" |
-| 15 | [`skills-backup-keeper`](skills/meta-skills/skills-backup-keeper/) | Dated skills-folder backups with manifest, plus append-only session journal | "Back up my skills folder before I edit anything" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 14 | [`no-delete-guardrail`](skills/meta-skills/no-delete-guardrail/) | Approval gates, versioned files, append-only change journal every conversation | "Clean up my project folder, but ask before removing anything" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/no-delete-guardrail.zip) |
+| 15 | [`skills-backup-keeper`](skills/meta-skills/skills-backup-keeper/) | Dated skills-folder backups with manifest, plus append-only session journal | "Back up my skills folder before I edit anything" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/skills-backup-keeper.zip) |
 
 ### Legal & Contracts
 `skills/legal-contracts/`
 
 *Drafts and organizes only: every output is a DRAFT for a qualified lawyer to review, and law is jurisdiction-specific. Not legal advice. For a legal-lens review of a proposal or deck rather than a contract, use the [`general-counsel-reviewer`](skills/executive-review/general-counsel-reviewer/) persona above.*
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 16 | [`contract-review-pack`](skills/legal-contracts/contract-review-pack/) | DRAFT contract review pack: key-terms abstraction, deviations vs your playbook, open questions, reviewer checklist | "Review nda-acme.docx against our playbook" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 16 | [`contract-review-pack`](skills/legal-contracts/contract-review-pack/) | DRAFT contract review pack: key-terms abstraction, deviations vs your playbook, open questions, reviewer checklist | "Review nda-acme.docx against our playbook" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/contract-review-pack.zip) |
 
 ### Procurement & Vendor Management
 `skills/procurement/`
 
 *Prepares the evaluation; never scores, ranks, selects, or awards. Those stay with the panel under procurement governance.*
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 17 | [`rfp-comparison-pack`](skills/procurement/rfp-comparison-pack/) | DRAFT comparison pack: requirement-by-supplier matrix, gaps, clarification questions (+ optional .xlsx) | "Compare these tender responses against our requirements" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 17 | [`rfp-comparison-pack`](skills/procurement/rfp-comparison-pack/) | DRAFT comparison pack: requirement-by-supplier matrix, gaps, clarification questions (+ optional .xlsx) | "Compare these tender responses against our requirements" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/rfp-comparison-pack.zip) |
 
 ### Data & Analytics
 `skills/data-analytics/`
 
 *Explores and drafts; never the source of truth. Every figure is unverified until checked in the data platform, and observations are leads, not conclusions.*
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 18 | [`dataset-insight-pack`](skills/data-analytics/dataset-insight-pack/) | DRAFT insight pack: data profile, observations (as leads), caveats, suggested charts | "Explore sales-q3.xlsx and tell me what stands out" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 18 | [`dataset-insight-pack`](skills/data-analytics/dataset-insight-pack/) | DRAFT insight pack: data profile, observations (as leads), caveats, suggested charts | "Explore sales-q3.xlsx and tell me what stands out" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/dataset-insight-pack.zip) |
 
 ### Data Privacy
 `skills/data-privacy/`
 
 *Prepares privacy paperwork only: never rates risk, determines lawful basis, or judges adequacy, and works from descriptions, never personal data. The DPO assesses and signs.*
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 19 | [`dpia-draft-pack`](skills/data-privacy/dpia-draft-pack/) | DRAFT DPIA scaffold: processing description, necessity/proportionality questions, risk table (ratings blank), mitigations, open questions | "Start a DPIA for the new monitoring tool" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 19 | [`dpia-draft-pack`](skills/data-privacy/dpia-draft-pack/) | DRAFT DPIA scaffold: processing description, necessity/proportionality questions, risk table (ratings blank), mitigations, open questions | "Start a DPIA for the new monitoring tool" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/dpia-draft-pack.zip) |
 
 ### Trade Compliance
 `skills/trade-compliance/`
 
 *Prepares the export-control file only: never classifies, screens, clears, or decides a licence. Screening runs in your screening tool; trade compliance decides (civil/criminal liability attaches).*
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 20 | [`export-review-pack`](skills/trade-compliance/export-review-pack/) | DRAFT export review: parties to screen, classification worksheet, red-flag review, licence-determination questions | "Prepare an export review pack for this order" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 20 | [`export-review-pack`](skills/trade-compliance/export-review-pack/) | DRAFT export review: parties to screen, classification worksheet, red-flag review, licence-determination questions | "Prepare an export review pack for this order" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/export-review-pack.zip) |
 
 ### Risk, Ethics & Compliance
 `skills/risk-ethics-compliance/`
 
 *Prepares GRC paperwork only: never concludes compliance, control effectiveness, or risk acceptance; control owners and audit assess.*
 
-| # | Skill | What it produces | Example trigger |
-|---|-------|------------------|-----------------|
-| 21 | [`controls-gap-pack`](skills/risk-ethics-compliance/controls-gap-pack/) | DRAFT controls & gap pack: obligations, mapped controls, apparent coverage, gaps, actions to assess | "Map this regulation to our controls and find the gaps" |
+| # | Skill | What it produces | Example trigger | Download |
+|---|-------|------------------|-----------------|----------|
+| 21 | [`controls-gap-pack`](skills/risk-ethics-compliance/controls-gap-pack/) | DRAFT controls & gap pack: obligations, mapped controls, apparent coverage, gaps, actions to assess | "Map this regulation to our controls and find the gaps" | [zip](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/controls-gap-pack.zip) |
 
 ### If you are introducing this to a team
 
