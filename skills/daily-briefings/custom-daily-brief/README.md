@@ -9,11 +9,15 @@
 
 The built-in Daily Briefing skill gives everyone the same summary in chat. This skill composes it with the Email, Calendar Management, Scheduling, Enterprise Search, Meetings and Word built-ins and adds the parts the built-in lacks: role presets (PM, EA, IT admin, sales), a custom section list you edit in `references/brief-config.md`, a saved file with a predictable name, and a consistent format every day. Once installed, you can also ask Cowork to run it on a schedule each weekday morning (Cowork allows up to five scheduled prompts per user, so budget this against your other schedules).
 
-## Install in 60 seconds
+## Install
 
-1. Copy this folder into your OneDrive at `/Documents/Cowork/skills/` (the lowercase `skills` folder name matters), so you have `/Documents/Cowork/skills/custom-daily-brief/SKILL.md`.
-2. Start a NEW Cowork conversation (skills are only discovered when a conversation starts).
-3. Use one of the trigger phrases below. To change roles, edit the `active-preset:` line in `references/brief-config.md`.
+**Quickest: upload the zip.** [Download `custom-daily-brief.zip`](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/custom-daily-brief.zip). In Cowork, open **Customize**, select the **Skills** tab, select the arrow next to **Add**, then **Upload skill**, and choose the file. Cowork validates it and saves the skill to your OneDrive for you, so you never create a folder.
+
+**Or copy this folder** into OneDrive at `/Documents/Cowork/skills/custom-daily-brief/`. The lowercase `skills` folder name is case-sensitive, and you copy the skill folder itself, not the category folder above it.
+
+Either way, start a **NEW** Cowork conversation afterwards: skills are discovered only when a conversation starts. Then use one of the trigger phrases below.
+
+Custom skills are not supported in Cowork on a phone or tablet, so this needs a laptop or desktop.
 
 ## Example triggers
 

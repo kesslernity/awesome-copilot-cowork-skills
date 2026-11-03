@@ -8,13 +8,15 @@
 - The approved outline as `<topic-slug>-outline.md`
 - A slide-by-slide brand compliance report as `<topic-slug>-brand-compliance.md`, every rule marked PASS, FIXED or MANUAL CHECK
 
-## Install in 60 seconds
+## Install
 
-1. Copy this folder into OneDrive at `/Documents/Cowork/skills/` (keep the folder name `branded-deck-builder`, and note that `skills` is lowercase).
-2. Start a NEW Cowork conversation: skills are only discovered when a conversation starts.
-3. Use one of the trigger phrases below.
+**Quickest: upload the zip.** [Download `branded-deck-builder.zip`](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/branded-deck-builder.zip). In Cowork, open **Customize**, select the **Skills** tab, select the arrow next to **Add**, then **Upload skill**, and choose the file. Cowork validates it and saves the skill to your OneDrive for you, so you never create a folder.
 
-One-time setup before your first deck: drop your company .pptx template into this folder, then copy `references/brand-rules-template.md` to `references/brand-rules.md` and replace the bracketed placeholders with your colours, fonts, logo rules and banned visuals. If you skip this, the skill stops and walks you through it instead of building an off-brand deck.
+**Or copy this folder** into OneDrive at `/Documents/Cowork/skills/branded-deck-builder/`. The lowercase `skills` folder name is case-sensitive, and you copy the skill folder itself, not the category folder above it.
+
+Either way, start a **NEW** Cowork conversation afterwards: skills are discovered only when a conversation starts. Then use one of the trigger phrases below.
+
+Custom skills are not supported in Cowork on a phone or tablet, so this needs a laptop or desktop.
 
 ## Example triggers
 

@@ -8,13 +8,15 @@
 - Emails in your voice, created as Outlook Drafts only. Nothing is ever sent.
 - Documents in your voice, saved as `DRAFT-<topic>-YYYY-MM-DD.docx` in `/Documents/Cowork/output/`.
 
-## Install in 60 seconds
+## Install
 
-1. Copy this folder into OneDrive at `/Documents/Cowork/skills/` so that `SKILL.md` sits at `/Documents/Cowork/skills/write-like-me/SKILL.md` (the lowercase `skills` folder name matters).
-2. Start a NEW Cowork conversation. Skills are discovered when a conversation starts, not mid-conversation.
-3. Use one of the trigger phrases below.
+**Quickest: upload the zip.** [Download `write-like-me.zip`](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/write-like-me.zip). In Cowork, open **Customize**, select the **Skills** tab, select the arrow next to **Add**, then **Upload skill**, and choose the file. Cowork validates it and saves the skill to your OneDrive for you, so you never create a folder.
 
-First run only: say "build my voice profile". Cowork saves `voice-profile.md` to `/Documents/Cowork/output/`. Move that file into `/Documents/Cowork/skills/write-like-me/references/` (skills load companion files from inside their own folder, and Cowork does not write into the skills folder itself), then start a new conversation. Every draft request after that uses your profile.
+**Or copy this folder** into OneDrive at `/Documents/Cowork/skills/write-like-me/`. The lowercase `skills` folder name is case-sensitive, and you copy the skill folder itself, not the category folder above it.
+
+Either way, start a **NEW** Cowork conversation afterwards: skills are discovered only when a conversation starts. Then use one of the trigger phrases below.
+
+Custom skills are not supported in Cowork on a phone or tablet, so this needs a laptop or desktop.
 
 ## Example triggers
 

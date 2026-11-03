@@ -8,13 +8,15 @@
 - One notification email per document owner in your Drafts folder, listing their overdue documents with links. Drafts only, the skill never sends anything.
 - A conversation summary with bucket counts, the exact workbook path, and confirmation of whether notifications went to Drafts or to a fallback `notifications-YYYY-MM-DD.md` file.
 
-## Install in 60 seconds
+## Install
 
-1. Copy this folder into OneDrive at `/Documents/Cowork/skills/` (so the file sits at `/Documents/Cowork/skills/sharepoint-review-sweeper/SKILL.md`).
-2. Start a NEW Cowork conversation. Skills are only discovered when a conversation starts.
-3. Use one of the trigger phrases below.
+**Quickest: upload the zip.** [Download `sharepoint-review-sweeper.zip`](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/sharepoint-review-sweeper.zip). In Cowork, open **Customize**, select the **Skills** tab, select the arrow next to **Add**, then **Upload skill**, and choose the file. Cowork validates it and saves the skill to your OneDrive for you, so you never create a folder.
 
-Optional but recommended: fill in `references/sweep-config.md` (site URL, library, review-date column, owner column) before the first run. If you skip this, the skill asks for the missing values in conversation.
+**Or copy this folder** into OneDrive at `/Documents/Cowork/skills/sharepoint-review-sweeper/`. The lowercase `skills` folder name is case-sensitive, and you copy the skill folder itself, not the category folder above it.
+
+Either way, start a **NEW** Cowork conversation afterwards: skills are discovered only when a conversation starts. Then use one of the trigger phrases below.
+
+Custom skills are not supported in Cowork on a phone or tablet, so this needs a laptop or desktop.
 
 ## Example triggers
 

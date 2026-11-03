@@ -6,11 +6,15 @@
 
 A DRAFT Word review saved to /Documents/Cowork/reviews/<artifact-name>-ciso-review.docx containing: a verdict (proceed, proceed with conditions, or not ready), three to seven findings each cited to a specific passage of your document, the material security and compliance risks, what would change the reviewer's mind, and the five interrogation questions a real CISO would ask in the meeting.
 
-## Install in 60 seconds
+## Install
 
-1. Copy this folder into OneDrive at /Documents/Cowork/skills/ (keep the folder name ciso-reviewer, and note the lowercase skills folder is case-sensitive).
-2. Start a NEW Cowork conversation: skills are discovered at conversation start, not mid-session.
-3. Use one of the trigger phrases below.
+**Quickest: upload the zip.** [Download `ciso-reviewer.zip`](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/ciso-reviewer.zip). In Cowork, open **Customize**, select the **Skills** tab, select the arrow next to **Add**, then **Upload skill**, and choose the file. Cowork validates it and saves the skill to your OneDrive for you, so you never create a folder.
+
+**Or copy this folder** into OneDrive at `/Documents/Cowork/skills/ciso-reviewer/`. The lowercase `skills` folder name is case-sensitive, and you copy the skill folder itself, not the category folder above it.
+
+Either way, start a **NEW** Cowork conversation afterwards: skills are discovered only when a conversation starts. Then use one of the trigger phrases below.
+
+Custom skills are not supported in Cowork on a phone or tablet, so this needs a laptop or desktop.
 
 ## Example triggers
 

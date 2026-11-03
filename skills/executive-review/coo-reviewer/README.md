@@ -12,11 +12,15 @@ A DRAFT Word review of your proposal, business case, deck or plan, written in ch
 - **WHAT WOULD CHANGE MY MIND**: the evidence that would move the verdict
 - **5 INTERROGATION QUESTIONS**: the questions the real executive would ask in the meeting
 
-## Install in 60 seconds
+## Install
 
-1. Copy this folder into your OneDrive at `/Documents/Cowork/skills/` (keep the folder name `coo-reviewer`; the lowercase `skills` folder name is case-sensitive).
-2. Start a NEW Cowork conversation. Skills are discovered at the start of each conversation, not mid-session.
-3. Use one of the trigger phrases below.
+**Quickest: upload the zip.** [Download `coo-reviewer.zip`](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/coo-reviewer.zip). In Cowork, open **Customize**, select the **Skills** tab, select the arrow next to **Add**, then **Upload skill**, and choose the file. Cowork validates it and saves the skill to your OneDrive for you, so you never create a folder.
+
+**Or copy this folder** into OneDrive at `/Documents/Cowork/skills/coo-reviewer/`. The lowercase `skills` folder name is case-sensitive, and you copy the skill folder itself, not the category folder above it.
+
+Either way, start a **NEW** Cowork conversation afterwards: skills are discovered only when a conversation starts. Then use one of the trigger phrases below.
+
+Custom skills are not supported in Cowork on a phone or tablet, so this needs a laptop or desktop.
 
 ## Example triggers
 

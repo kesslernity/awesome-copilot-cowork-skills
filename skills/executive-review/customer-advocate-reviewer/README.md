@@ -14,11 +14,15 @@ A structured review document, `<artifact-name>-customer-advocate-review.docx`, s
 
 The persona lives in `references/persona.md`: mandate, ten probes, red flags, what convinces a customer advocate and what gets dismissed, plus documented blind spots so a validator can challenge the feedback where the archetype distorts it.
 
-## Install in 60 seconds
+## Install
 
-1. Copy this folder (`customer-advocate-reviewer`) into your OneDrive at `/Documents/Cowork/skills/` (the lowercase `skills` folder name is case-sensitive).
-2. Start a NEW Cowork conversation. Skills are discovered at conversation start, not mid-conversation.
-3. Use one of the trigger phrases below, naming the file you want reviewed.
+**Quickest: upload the zip.** [Download `customer-advocate-reviewer.zip`](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/customer-advocate-reviewer.zip). In Cowork, open **Customize**, select the **Skills** tab, select the arrow next to **Add**, then **Upload skill**, and choose the file. Cowork validates it and saves the skill to your OneDrive for you, so you never create a folder.
+
+**Or copy this folder** into OneDrive at `/Documents/Cowork/skills/customer-advocate-reviewer/`. The lowercase `skills` folder name is case-sensitive, and you copy the skill folder itself, not the category folder above it.
+
+Either way, start a **NEW** Cowork conversation afterwards: skills are discovered only when a conversation starts. Then use one of the trigger phrases below.
+
+Custom skills are not supported in Cowork on a phone or tablet, so this needs a laptop or desktop.
 
 ## Example triggers
 

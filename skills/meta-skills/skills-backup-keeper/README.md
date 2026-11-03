@@ -8,11 +8,15 @@
 - An append-only `session-journal.md` (goal, files touched, decisions, next steps) stored in `skills-backup/`, outside the skills folder, so a wipe cannot take it too. A new conversation reads it and resumes where the last one stopped.
 - A guided, approval-gated restore that copies a chosen backup back into `/Documents/Cowork/skills/` and verifies the result against the manifest.
 
-## Install in 60 seconds
+## Install
 
-1. Copy this folder into OneDrive at `/Documents/Cowork/skills/` (so you have `/Documents/Cowork/skills/skills-backup-keeper/SKILL.md`). The lowercase `skills` folder name is case-sensitive.
-2. Start a NEW Cowork conversation. Skills are only discovered when a conversation starts.
-3. Use one of the trigger phrases below.
+**Quickest: upload the zip.** [Download `skills-backup-keeper.zip`](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/skills-backup-keeper.zip). In Cowork, open **Customize**, select the **Skills** tab, select the arrow next to **Add**, then **Upload skill**, and choose the file. Cowork validates it and saves the skill to your OneDrive for you, so you never create a folder.
+
+**Or copy this folder** into OneDrive at `/Documents/Cowork/skills/skills-backup-keeper/`. The lowercase `skills` folder name is case-sensitive, and you copy the skill folder itself, not the category folder above it.
+
+Either way, start a **NEW** Cowork conversation afterwards: skills are discovered only when a conversation starts. Then use one of the trigger phrases below.
+
+Custom skills are not supported in Cowork on a phone or tablet, so this needs a laptop or desktop.
 
 ## Example triggers
 

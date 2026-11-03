@@ -16,11 +16,15 @@ A DRAFT Word review document, `<artifact-name>-cbo-review.docx`, saved to OneDri
 
 If `/Documents/Cowork/org-profile.md` exists in your OneDrive, the review uses it as company context; otherwise it runs generic and tells you where to find the template.
 
-## Install in 60 seconds
+## Install
 
-1. Copy this folder into OneDrive at `/Documents/Cowork/skills/` (keep the folder name `cbo-reviewer` and the lowercase `skills`).
-2. Start a NEW Cowork conversation: skills are only discovered when a conversation starts.
-3. Use one of the trigger phrases below.
+**Quickest: upload the zip.** [Download `cbo-reviewer.zip`](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/cbo-reviewer.zip). In Cowork, open **Customize**, select the **Skills** tab, select the arrow next to **Add**, then **Upload skill**, and choose the file. Cowork validates it and saves the skill to your OneDrive for you, so you never create a folder.
+
+**Or copy this folder** into OneDrive at `/Documents/Cowork/skills/cbo-reviewer/`. The lowercase `skills` folder name is case-sensitive, and you copy the skill folder itself, not the category folder above it.
+
+Either way, start a **NEW** Cowork conversation afterwards: skills are discovered only when a conversation starts. Then use one of the trigger phrases below.
+
+Custom skills are not supported in Cowork on a phone or tablet, so this needs a laptop or desktop.
 
 ## Example triggers
 

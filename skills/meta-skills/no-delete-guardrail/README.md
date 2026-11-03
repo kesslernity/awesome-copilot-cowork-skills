@@ -9,11 +9,15 @@
 - An enumerated change list in the conversation before anything is touched, and a per-item approval gate on every destructive action.
 - A flat refusal, with alternatives, for any bulk destructive operation (whole folders, "everything older than", more than 10 items at once).
 
-## Install in 60 seconds
+## Install
 
-1. Copy this folder into OneDrive at /Documents/Cowork/skills/ so the file sits at /Documents/Cowork/skills/no-delete-guardrail/SKILL.md.
-2. Start a NEW Cowork conversation. Skills are discovered at conversation start, not mid-chat.
-3. Use one of the trigger phrases below, or just start any task that touches files: the guardrail applies itself.
+**Quickest: upload the zip.** [Download `no-delete-guardrail.zip`](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/no-delete-guardrail.zip). In Cowork, open **Customize**, select the **Skills** tab, select the arrow next to **Add**, then **Upload skill**, and choose the file. Cowork validates it and saves the skill to your OneDrive for you, so you never create a folder.
+
+**Or copy this folder** into OneDrive at `/Documents/Cowork/skills/no-delete-guardrail/`. The lowercase `skills` folder name is case-sensitive, and you copy the skill folder itself, not the category folder above it.
+
+Either way, start a **NEW** Cowork conversation afterwards: skills are discovered only when a conversation starts. Then use one of the trigger phrases below.
+
+Custom skills are not supported in Cowork on a phone or tablet, so this needs a laptop or desktop.
 
 ## Example triggers
 

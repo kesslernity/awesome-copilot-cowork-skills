@@ -8,11 +8,15 @@ A self-contained `dashboard-<project>-YYYY-MM-DD.html` file saved to `/Documents
 
 It pairs with the `project-status-tracker` skill in this repository: that skill maintains `project.md` (which holds the status and the milestones table), `decisions.md`, `risks.md` and `links.md` in your project folder, and this skill renders them. No tracker yet? It also runs from a status summary you paste into the chat.
 
-## Install in 60 seconds
+## Install
 
-1. Copy this folder into OneDrive at `/Documents/Cowork/skills/` (so the path is `/Documents/Cowork/skills/project-dashboard-builder/`).
-2. Start a NEW Cowork conversation (skills are discovered only when a conversation starts).
-3. Use one of the trigger phrases below.
+**Quickest: upload the zip.** [Download `project-dashboard-builder.zip`](https://github.com/kesslernity/awesome-copilot-cowork-skills/raw/main/dist/zips/project-dashboard-builder.zip). In Cowork, open **Customize**, select the **Skills** tab, select the arrow next to **Add**, then **Upload skill**, and choose the file. Cowork validates it and saves the skill to your OneDrive for you, so you never create a folder.
+
+**Or copy this folder** into OneDrive at `/Documents/Cowork/skills/project-dashboard-builder/`. The lowercase `skills` folder name is case-sensitive, and you copy the skill folder itself, not the category folder above it.
+
+Either way, start a **NEW** Cowork conversation afterwards: skills are discovered only when a conversation starts. Then use one of the trigger phrases below.
+
+Custom skills are not supported in Cowork on a phone or tablet, so this needs a laptop or desktop.
 
 ## Example triggers
 
