@@ -19,7 +19,7 @@ The board and bench already cover sixteen personas (seven board roles plus nine 
 
 ## Six-section checklist
 
-The persona file follows `skills/executive-review/review-board/references/persona-template.md` and fills in all six sections:
+The persona file follows the six-section structure of any existing persona, for example `skills/executive-review/cfo-reviewer/references/persona.md`, and fills in all six sections:
 
 - [ ] MANDATE
 - [ ] WHAT I PROBE FIRST

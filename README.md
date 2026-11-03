@@ -103,7 +103,7 @@ What a single run costs is set by four inputs: **model use, context retrieval, t
 - **The model picker.** Where several models are available (Opus 4.8 and Sonnet 4.6 at GA, with a lower-cost Cowork 1 model coming), pick the cheaper model for routine runs. These skills are model-agnostic; the workflow is identical on either.
 - **The skills' own design.** Named save paths, no redundant re-reads, draft-only outputs and approval-gated deletes mean fewer wasted runs and no runaway loops, which is also fewer credits.
 
-**For admins:** Cowork is off by default. You enable it, choose who gets access, and set spending limits and usage alerts at tenant, group and user level, with usage reporting at each. Estimate per-skill cost before rollout with the [Cowork cost estimator](https://aka.ms/CustomerCoworkEstimator); background on credits is in [What is Copilot Credits](https://aka.ms/CopilotCredits/LicensingGuide).
+**For admins:** Cowork is off by default. You enable it, choose who gets access, and set spending limits and usage alerts at tenant, group and user level, with usage reporting at each. Estimate per-skill cost before rollout with the [Cowork cost estimator](https://aka.ms/CoworkAdoption/Estimator); background on credits is in [What is Copilot Credits](https://aka.ms/CopilotCredits/LicensingGuide).
 
 Sources: [Copilot Cowork is now generally available](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/) · [Manage Copilot Cowork for your organization](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance).
 
